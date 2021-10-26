@@ -1,9 +1,9 @@
 import React from 'react'
-import './index.css'
+import './UserDetail.css'
 export default function UserDetail() {
     return (
         <div>
-
+            Day la trang UserDetail
         </div>
     )
 }

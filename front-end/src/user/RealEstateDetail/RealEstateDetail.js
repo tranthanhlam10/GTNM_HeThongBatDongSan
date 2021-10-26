@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './RealEstateDetail.css'
 export default function RealEstateDetail() {
     return (
         <div>

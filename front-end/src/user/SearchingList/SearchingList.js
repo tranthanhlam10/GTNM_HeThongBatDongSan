@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './SearchingList.css'
 export default function SearchingList() {
     return (
         <div>

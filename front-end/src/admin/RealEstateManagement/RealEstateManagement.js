@@ -1,9 +1,9 @@
 import React from 'react'
-import './index.css'
+import './RealEstateManagement.css'
 export default function RealEstateManagement() {
     return (
         <div>
-
+            day la trang RealEstateManagement
         </div>
     )
 }

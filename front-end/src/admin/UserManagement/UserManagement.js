@@ -1,9 +1,9 @@
 import React from 'react'
-import './index.css'
+import './UserManagement.css'
 export default function UserManagement() {
     return (
         <div>
-
+            Day la trang UserManagement
         </div>
     )
 }

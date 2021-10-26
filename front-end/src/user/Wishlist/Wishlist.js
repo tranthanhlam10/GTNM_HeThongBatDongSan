@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+import './Wishlist.css'
 export default function Wishlist() {
     return (
         <div>

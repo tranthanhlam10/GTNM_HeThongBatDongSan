@@ -1,9 +1,9 @@
 import React from 'react'
-import './index.css'
+import './ProjectManagement.css'
 export default function ProjectManagement() {
     return (
         <div>
-
+            Day la trang ProjectManagement
         </div>
     )
 }

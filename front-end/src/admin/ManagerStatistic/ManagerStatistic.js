@@ -1,10 +1,10 @@
 import React from 'react'
-import './index.css'
+import './ManagerStatistic.css'
 
 export default function ManagerStatistic() {
     return (
         <div>
-
+            Day la trang ManagerStatistic
         </div>
     )
 }

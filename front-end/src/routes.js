@@ -1,7 +1,8 @@
 import React from 'react';
-import Login from './sign/Login'
-import Register from './sign/Register'
-import UserScreen from './user/index'
+import Login from './sign/Login/Login'
+import Register from './sign/Register/Register'
+import UserScreen from './user/UserScreen'
+import AdminScreen from './admin/AdminScreen'
 const routes = [
     {
         path: "/login",
@@ -12,6 +13,11 @@ const routes = [
         path: "/register",
         exact: false,
         main: () => <Register />,
+    },
+    {
+        path: "/admin",
+        exact: false,
+        main: () => <AdminScreen />,
     },
     {
         path: "",
