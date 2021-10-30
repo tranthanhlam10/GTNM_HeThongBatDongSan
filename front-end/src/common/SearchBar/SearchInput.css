@@ -1,5 +1,6 @@
 .search-input{
-    
+    background: #fff;
+    border-radius: 40px;
 }
 .search-input-container{
     border: 1px solid #dedede;
