@@ -1,0 +1,19 @@
+.searchbar{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 15px;
+    align-items: center;
+    box-shadow: 1px 1px 6px rgb(0 0 0 / 15%);
+}
+.search-bar-col-first{
+    width: 53%;
+    padding-right: 10px;
+}
+.search-bar-col-second{
+    display: flex;
+    border-right: 1px solid #dedede;
+}
+.search-bar-col-third{
+    margin-left: 20px;
+    display: flex;
+}

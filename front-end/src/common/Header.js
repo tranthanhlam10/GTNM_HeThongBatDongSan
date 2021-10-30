@@ -76,6 +76,7 @@ export default function Header() {
                         return (
                             <li className="header-navbar">
                                 <Link to={item.link} className="navbar-link">{item.displayName}</Link>
+                                <div className="header-line-hover"></div>
                                 <ul className="navbar-hover-list">
                                     {
                                         item.dropDownItems.map((item) => {
@@ -102,9 +103,9 @@ export default function Header() {
                     <Link to="/login" className="navbar-link">Đăng nhập</Link>
                 </li>
                 <li>
-                    <Link to="/register" className="post">Đăng kí</Link>
+                    <Link to="/register" className="register">Đăng kí</Link>
                 </li>
-            </ul>
-        </div>
+            </ul >
+        </div >
     )
 }
