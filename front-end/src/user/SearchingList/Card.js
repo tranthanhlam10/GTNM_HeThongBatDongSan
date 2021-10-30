@@ -13,7 +13,7 @@ export default function Card() {
                         <span className="favorite-name">
                             Lưu tin
                         </span>
-                        <span class="material-icons fovorite-icon">
+                        <span className="material-icons fovorite-icon">
                             favorite
                         </span>
                     </div>
@@ -28,14 +28,14 @@ export default function Card() {
                     </a>
                 </div>
                 <div className="card-time">
-                    <span class="material-icons">
+                    <span className="material-icons">
                         schedule
                     </span>
                     {/* //tryền data thời gian vô đây */}
                     6 ngày trước
                 </div>
                 <div className="card-price">
-                    <span class="material-icons">
+                    <span className="material-icons">
                         attach_money
                     </span>
                     <span>
@@ -48,7 +48,7 @@ export default function Card() {
                 </div>
                 <div className="card-more-info">
                     <div className="card-area">
-                        <span class="material-icons">
+                        <span className="material-icons">
                             home_work
                         </span>
                         <span>
@@ -61,7 +61,7 @@ export default function Card() {
                         <span>M2</span>
                     </div>
                     <div className="card-location">
-                        <span class="material-icons">
+                        <span className="material-icons">
                             location_on
                         </span>
                         <span>

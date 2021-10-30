@@ -72,16 +72,16 @@ export default function Header() {
                     </Link>
                 </li>
                 {
-                    navbarItems.map((item) => {
+                    navbarItems.map((item, index) => {
                         return (
-                            <li className="header-navbar">
+                            <li className="header-navbar" key={index}>
                                 <Link to={item.link} className="navbar-link">{item.displayName}</Link>
                                 <div className="header-line-hover"></div>
                                 <ul className="navbar-hover-list">
                                     {
-                                        item.dropDownItems.map((item) => {
+                                        item.dropDownItems.map((item, index) => {
                                             return (
-                                                <li>
+                                                <li key={index}>
                                                     <Link to={item.link}>{item.displayName}</Link>
                                                 </li>
                                             );

@@ -3,7 +3,7 @@ import './SearchBtn.css'
 export default function SearchBtn() {
     return (
         <button className="search-btn" >
-            <span class="material-icons">
+            <span className="material-icons">
                 search
             </span>
             <p1>TÌM KIẾM</p1>

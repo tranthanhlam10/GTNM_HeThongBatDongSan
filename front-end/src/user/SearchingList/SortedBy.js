@@ -17,18 +17,18 @@ const sortItems = [
 ]
 export default function SortedBy() {
     return (
-        <div class="sort-control">
-            <div class="filter-header">
+        <div className="sort-control">
+            <div className="filter-header">
                 Sắp xếp theo
-                <span class="material-icons">
+                <span className="material-icons">
                     expand_more
                 </span>
-                <ul class="sorted-list">
+                <ul className="sorted-list">
 
                     {
-                        sortItems.map((item) => {
+                        sortItems.map((item, index) => {
                             return (
-                                <li class="sorted-item">
+                                <li className="sorted-item" key={index}>
                                     <Link to={item.link}>{item.displayName}</Link>
                                 </li>
                             )

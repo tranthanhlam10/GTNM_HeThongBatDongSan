@@ -1,7 +1,7 @@
 import React from 'react'
 import './FilterBlock.css'
 export default function FilterBlock(props) {
-    const { filterList, title } = props;
+    const { filterItems, title } = props;
     return (
         <div className="filter-container">
             <div className="filter-title">
@@ -9,9 +9,9 @@ export default function FilterBlock(props) {
             </div>
             <ul className="filter-list">
                 {
-                    filterList.map((item) => {
+                    filterItems.map((item, index) => {
                         return (
-                            <li className="filter-item">
+                            <li className="filter-item" key={index}>
                                 <a href={item.link}>
                                     {item.displayName}
                                 </a>

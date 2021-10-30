@@ -4,6 +4,8 @@ import SearchBar from '../../common/SearchBar/SearchBar'
 import Card from './Card'
 import SortedBy from './SortedBy'
 import FilterBlock from './FilterBlock'
+import HotLocation from './HotLocation'
+import NewProject from './NewProject'
 const filterList = [
     {
         filterTitle: 'TÌM THEO KHOẢNG GIÁ',
@@ -80,6 +82,150 @@ const filterList = [
         ]
     }
 ]
+const hotLocationList = [
+    {
+        title: 'CHO THUÊ CĂN HỘ CHUNG CƯ NỔI BẬT',
+        hotLocationItems: [
+            {
+                displayName: 'Cho thuê căn hộ chung cư Hồ Chí Minh',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Hà Nội',
+                num: '173',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Đà Nẵng',
+                num: '173',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Khánh Hòa',
+                num: '29',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Bà Rịa Vũng Tàu',
+                num: '27',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Bình Dương',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Quảng Ninh',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Hải Phòng',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Bắc Giang',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Bình Định',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Thừa Thiên Huế',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Bình Thuận',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Thanh Hóa',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Kiên Giang',
+                num: '4895',
+                link: ''
+            },
+            {
+                displayName: 'Cho thuê căn hộ chung cư Đồng Nai',
+                num: '4895',
+                link: ''
+            },
+        ]
+    }
+]
+const newProjectList = [
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+    {
+        link: '',     //này là cái link gửi request mình BE nè
+        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
+        name: 'THE BEVERLY',
+        location: 'Quận 9, Hồ Chí Minh',
+    },
+]
 export default function SearchingList() {
     return (
         <div className="body">
@@ -87,7 +233,7 @@ export default function SearchingList() {
             <div className="search-list-container">
                 <div className="main-content">
                     <div className="search-title">
-                        <p1>Cho thuê căn hộ chung cư | Thuê căn hộ chính chủ | Giá tốt T10/2021</p1>
+                        <p>Cho thuê căn hộ chung cư | Thuê căn hộ chính chủ | Giá tốt T10/2021</p>
                     </div>
                     <SortedBy />
                     <Card />
@@ -102,16 +248,19 @@ export default function SearchingList() {
                     <Card />
                     <Card />
                     <Card />
-                    <Card />
-                    <Card />
-                    <Card />
                 </div>
                 <div className="search-list-filter-container">
-                    {filterList.map((item) => {
+                    {filterList.map((item, index) => {
                         return (
-                            <FilterBlock title={item.filterTitle} filterList={item.filterItems} />
+                            <FilterBlock title={item.filterTitle} filterItems={item.filterItems} key={index} />
                         )
                     })}
+                    {hotLocationList.map((item, index) => {
+                        return (
+                            <HotLocation title={item.title} hotLocationItems={item.hotLocationItems} key={index} />
+                        )
+                    })}
+                    <NewProject newProjectItems={newProjectList} />
                 </div>
             </div>
         </div>
