@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    font-weight: 600;
   }
   .header-col {
     display: flex;
@@ -29,6 +30,7 @@
     box-shadow: 0px 8px 20px rgb(182 182 182 / 30%);
     background: #fff;
     display: none;
+    z-index: 999;
   }
   .navbar-link {
     height: 64px;
@@ -44,21 +46,32 @@
   .navbar-hover-list > li:hover {
     background: #ccc;
   }
+  .header-line-hover{
+    height: 2px;
+    width: 0;
+    background: #a18474;
+    transition: all 0.4s ease-in-out;
+  }
   .header-navbar:hover {
-    background-color: #ccc;
+    color: #a18474;
+  }
+  .header-navbar:hover .header-line-hover{
+    width: 100%;
   }
   .login {
     margin-right: 5px;
     margin-left: 24px;
   }
-  .post {
+  .register {
     border: 2px solid #a18474;
     border-radius: 10px;
     padding: 12px 16px;
     margin-left: 5px;
     cursor: pointer;
+    color: #a18474 !important;
   }
-  .post:hover {
+  .register:hover {
     background-color: #ccc;
+    
   }
   

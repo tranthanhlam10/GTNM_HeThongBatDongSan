@@ -1,0 +1,18 @@
+.option-container{
+    
+    border-left: 1px solid #ccc;
+    font-size: 14px;
+    color: #8e887e;
+    padding: 3px 8px;
+    cursor: pointer;
+    width: 115px;
+}
+.option-label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.option-container:hover {
+    background: #f5f6f7
+}

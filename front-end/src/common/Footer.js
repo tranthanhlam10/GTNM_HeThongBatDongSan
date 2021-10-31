@@ -1,13 +1,13 @@
 import React from 'react'
 import './Footer.css'
-import logo from "../assests/logo.png";
-import certification from "../assests/certification.png";
-import location from "../assests/location.png";
-import phone from "../assests/phone.png";
-import twitter from "../assests/twitter.png";
-import facebook from "../assests/facebook.png";
-import instagram from "../assests/instagram.png";
-import send from "../assests/send.png";
+import logo from "../assets/logo.png";
+import certification from "../assets/certification.png";
+import location from "../assets/location.png";
+import phone from "../assets/phone.png";
+import twitter from "../assets/twitter.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import send from "../assets/send.png";
 import { Link } from "react-router-dom";
 const connects = [
     {
@@ -108,13 +108,13 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                        {footerCols.map(item => {
+                        {footerCols.map((item, index) => {
                             return (
-                                <ul>
+                                <ul key={index}>
                                     <p className="footer-title">{item.title}</p>
                                     {item.items.map((item, index) => {
                                         return (
-                                            <li className="footer-item">
+                                            <li className="footer-item" key={index}>
                                                 <Link to={item.link}>{item.name}</Link>
                                             </li>
                                         );
@@ -126,7 +126,7 @@ export default function Footer() {
                         <ul className="footer-col-last">
                             <div>
                                 <p className="footer-title">Đăng kí nhận tin</p>
-                                <form action="" class="footer-form">
+                                <form action="" className="footer-form">
                                     <input
                                         type="text"
                                         placeholder="Nhập email của bạn"
@@ -157,7 +157,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="copyright">
-                <p1>Copyright 2007 - 2021. Nhadat.com.vn</p1>
+                <p>Copyright 2007 - 2021. Nhadat.com.vn</p>
             </div>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Header.css"
-import logo from "../assests/logo.png";
-import global from "../assests/global.png";
+import logo from "../assets/logo.png";
+import global from "../assets/global.png";
 import { Link } from "react-router-dom";
 const navbarItems = [
     {
@@ -72,15 +72,16 @@ export default function Header() {
                     </Link>
                 </li>
                 {
-                    navbarItems.map((item) => {
+                    navbarItems.map((item, index) => {
                         return (
-                            <li className="header-navbar">
+                            <li className="header-navbar" key={index}>
                                 <Link to={item.link} className="navbar-link">{item.displayName}</Link>
+                                <div className="header-line-hover"></div>
                                 <ul className="navbar-hover-list">
                                     {
-                                        item.dropDownItems.map((item) => {
+                                        item.dropDownItems.map((item, index) => {
                                             return (
-                                                <li>
+                                                <li key={index}>
                                                     <Link to={item.link}>{item.displayName}</Link>
                                                 </li>
                                             );
@@ -102,9 +103,9 @@ export default function Header() {
                     <Link to="/login" className="navbar-link">Đăng nhập</Link>
                 </li>
                 <li>
-                    <Link to="/register" className="post">Đăng kí</Link>
+                    <Link to="/register" className="register">Đăng kí</Link>
                 </li>
-            </ul>
-        </div>
+            </ul >
+        </div >
     )
 }
