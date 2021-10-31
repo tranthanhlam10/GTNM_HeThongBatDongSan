@@ -1,13 +1,13 @@
 import React from 'react'
 import './Footer.css'
-import logo from "../assests/logo.png";
-import certification from "../assests/certification.png";
-import location from "../assests/location.png";
-import phone from "../assests/phone.png";
-import twitter from "../assests/twitter.png";
-import facebook from "../assests/facebook.png";
-import instagram from "../assests/instagram.png";
-import send from "../assests/send.png";
+import logo from "../assets/logo.png";
+import certification from "../assets/certification.png";
+import location from "../assets/location.png";
+import phone from "../assets/phone.png";
+import twitter from "../assets/twitter.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import send from "../assets/send.png";
 import { Link } from "react-router-dom";
 const connects = [
     {

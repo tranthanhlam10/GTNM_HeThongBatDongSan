@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Header.css"
-import logo from "../assests/logo.png";
-import global from "../assests/global.png";
+import logo from "../assets/logo.png";
+import global from "../assets/global.png";
 import { Link } from "react-router-dom";
 const navbarItems = [
     {
