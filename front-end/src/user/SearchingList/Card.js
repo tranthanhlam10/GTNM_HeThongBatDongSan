@@ -1,12 +1,13 @@
 import React from 'react'
 import './Card.css'
 
-export default function Card() {
+export default function Card(props) {
+    const { image, name, time, price, area, location } = props;
     return (
         <div className="card-container">
             <div className="img-item">
                 <a href="#">
-                    <img src="https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg"></img>
+                    <img src={image}></img>
                 </a>
                 <button id="favorite">
                     <div className="favorite-content">
@@ -24,7 +25,7 @@ export default function Card() {
                 {/* //tryền data tên vô đây */}
                 <div className="card-title">
                     <a href="#">
-                        Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th
+                        {name}
                     </a>
                 </div>
                 <div className="card-time">
@@ -32,7 +33,7 @@ export default function Card() {
                         schedule
                     </span>
                     {/* //tryền data thời gian vô đây */}
-                    6 ngày trước
+                    {time}
                 </div>
                 <div className="card-price">
                     <span className="material-icons">
@@ -43,7 +44,7 @@ export default function Card() {
                     </span>
                     {/* //tryền data giá vô đây */}
                     <span>
-                        14 TRIỆU/THÁNG
+                        {price}
                     </span>
                 </div>
                 <div className="card-more-info">
@@ -56,7 +57,7 @@ export default function Card() {
                         </span>
                         {/* //tryền data diện tích vô đây */}
                         <span>
-                            70
+                            {area}
                         </span>
                         <span>M2</span>
                     </div>
@@ -69,7 +70,7 @@ export default function Card() {
                         </span>
                         {/* //tryền data location vô đây */}
                         <span>
-                            QUẬN NAM TỪ LIÊM, HÀ NỘI
+                            {location}
                         </span>
                     </div>
                 </div>

@@ -9,15 +9,43 @@ const navbarItems = [
         link: '',
         dropDownItems: [
             {
-                displayName: 'Nhà chung cư',
+                displayName: 'Bán căn hộ chung cư',
                 link: '',
             },
             {
-                displayName: 'Nhà riêng',
+                displayName: 'Bán nhà riêng, nhà mặt phố',
                 link: '',
             },
             {
-                displayName: 'Nhà mặt phố',
+                displayName: 'Bán biệt thự, nhà liền kề',
+                link: '',
+            },
+            {
+                displayName: 'Bán đất nền',
+                link: '',
+            },
+            {
+                displayName: 'Bán đất thổ cư',
+                link: '',
+            },
+            {
+                displayName: 'Bán tòa nhà văn phòng',
+                link: '',
+            },
+            {
+                displayName: 'Bán căn hộ CONDOTEL',
+                link: '',
+            },
+            {
+                displayName: 'Bán đất trang trại, nghỉ dưỡng',
+                link: '',
+            },
+            {
+                displayName: 'Bán kho, nhà xưởng, kiot',
+                link: '',
+            },
+            {
+                displayName: 'Bán nhà đất khác',
                 link: '',
             },
         ]
@@ -27,15 +55,39 @@ const navbarItems = [
         link: '',
         dropDownItems: [
             {
-                displayName: 'Nhà chung cư cho thuê',
+                displayName: 'Cho thuê căn hộ chung cư',
                 link: '',
             },
             {
-                displayName: 'Nhà riêng cho thuê',
+                displayName: 'Cho thuê phòng trọ, nhà trọ',
                 link: '',
             },
             {
-                displayName: 'Nhà mặt phố cho thuê',
+                displayName: 'Cho thuê văn phòng',
+                link: '',
+            },
+            {
+                displayName: 'Cho thuê nhà riêng, nhà mặt phố',
+                link: '',
+            },
+            {
+                displayName: 'Cho thuê căn hộ CONDOTEL',
+                link: '',
+            },
+            {
+                displayName: 'Cho thuê căn hộ OFICETEL',
+                link: '',
+            },
+            {
+                displayName: 'Cho thuê cửa hàng, kiot',
+                link: '',
+            },
+            {
+                displayName: 'Cho thuê kho, nhà xưởng',
+                link: '',
+            },
+            {
+                displayName: 'Cho thuê nhà đất khác',
                 link: '',
             },
         ]
@@ -67,7 +119,7 @@ export default function Header() {
         <div className="header-container">
             <ul className="header-col">
                 <li className="logo-container">
-                    <Link to="/home">
+                    <Link to="/">
                         <img src={logo} alt="logo" className="logo-header" />
                     </Link>
                 </li>
@@ -99,8 +151,8 @@ export default function Header() {
                         <img src={global} alt="global" />
                     </Link>
                 </li>
-                <li className="header-navbar login">
-                    <Link to="/login" className="navbar-link">Đăng nhập</Link>
+                <li >
+                    <Link to="/login" className="login">Đăng nhập</Link>
                 </li>
                 <li>
                     <Link to="/register" className="register">Đăng kí</Link>

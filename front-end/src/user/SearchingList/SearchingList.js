@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReactPaginate from 'react-paginate'
 import './SearchingList.css'
 import SearchBar from '../../common/SearchBar/SearchBar'
 import Card from './Card'
@@ -81,6 +82,170 @@ const filterList = [
             },
         ]
     }
+]
+const cardList = [
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '6 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '70',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+    {
+        image: 'https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg',
+        name: 'Chính chủ cho thê căn hộ chung cư central field 219 trung kính, dt 70m2, giá 14tr/th',
+        time: '60 ngày trước',
+        price: '14 TRIỆU/THÁNG',
+        area: '700',
+        location: 'QUẬN NAM TỪ LIÊM, HÀ NỘI',
+    },
+
+
 ]
 const hotLocationList = [
     {
@@ -226,9 +391,32 @@ const newProjectList = [
         location: 'Quận 9, Hồ Chí Minh',
     },
 ]
+
+
 export default function SearchingList() {
+    const [cards, setCards] = useState(cardList.slice(0, 100));
+    const [pageNumber, setPageNumber] = useState(0)
+    const cardsPerPage = 10
+    const pagesVisited = pageNumber * cardsPerPage
+    const displayCards = cards
+        .slice(pagesVisited, pagesVisited + cardsPerPage)
+        .map((card) => {
+            return (
+                <Card image={card.image} name={card.name} time={card.time} price={card.price} area={card.area} location={card.location} />
+            );
+        })
+    const pageCount = Math.ceil(cards.length / cardsPerPage)
+    const changePage = ({ selected }) => {
+        setPageNumber(selected);
+    }
+    const arrowRight = <span class="material-icons">
+        arrow_forward_ios
+    </span>
+    const arrowLeft = <span class="material-icons">
+        arrow_back_ios
+    </span>
     return (
-        <div className="body">
+        <div className="body-searching-list">
             <SearchBar />
             <div className="search-list-container">
                 <div className="main-content">
@@ -236,18 +424,20 @@ export default function SearchingList() {
                         <p>Cho thuê căn hộ chung cư | Thuê căn hộ chính chủ | Giá tốt T10/2021</p>
                     </div>
                     <SortedBy />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
+                    {
+                        displayCards
+                    }
+                    <ReactPaginate
+                        previousLabel={arrowLeft}
+                        nextLabel={arrowRight}
+                        pageCount={pageCount}
+                        onPageChange={changePage}
+                        containerClassName={'paginationBttns'}
+                        previousLinkClassName={'previousBttn'}
+                        nextLinkClassName={'nextBttn'}
+                        disabledClassName={'paginationDisabled'}
+                        activeClassName={'paginationActive'}
+                    />
                 </div>
                 <div className="search-list-filter-container">
                     {filterList.map((item, index) => {

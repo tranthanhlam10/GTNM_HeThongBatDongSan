@@ -3,9 +3,10 @@
   }
   .footer-container {
     border-bottom: 1px solid #000;
+
   }
   .footer-center {
-    max-width: 70%; 
+    width: var(--container-width);
     margin: auto;
     padding: 48px 0 24px;
   }

@@ -13,6 +13,7 @@
     cursor: pointer;
     justify-content: space-between;
     position: relative;
+    
   }
   .sorted-list {
     width: 160px;
@@ -21,15 +22,14 @@
     top: 100%;
     background-color: #fff;
     display: none;
+    
   }
   .sorted-item {
     border: 1px solid #dedede;
     padding: 10px;
     cursor: pointer;
   }
-  .filter-header:hover {
-    background-color: #dedede;
-  }
+
   .filter-header:hover .sorted-list {
     display: block;
   }
