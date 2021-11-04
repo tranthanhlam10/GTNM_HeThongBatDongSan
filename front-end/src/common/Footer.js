@@ -84,7 +84,7 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-center">
                     <div className="footer-logo">
-                        <Link to="/home">
+                        <Link to="/">
                             <img src={logo} alt="logo" className="logo" />
                         </Link>
                     </div>

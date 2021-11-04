@@ -24,3 +24,7 @@ ul{
   list-style-type: none;
   padding-left: 0 !important;
 }
+:root{
+  --container-width: 1322px;
+  --main-color: #A18474;
+}

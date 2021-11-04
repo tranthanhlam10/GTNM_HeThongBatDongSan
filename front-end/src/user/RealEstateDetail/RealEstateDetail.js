@@ -5,6 +5,7 @@ import RealEstateInfo from './RealEstateInfo'
 import InfoBox from './InfoBox'
 import NearRealEstate from './NearRealEstate'
 import HotRealEstate from './HotRealEstate'
+import DetailCarousel from './DetailCarousel'
 const nearList = [
     {
         title: 'Bất động sản gần khu vực đang xem',
@@ -89,7 +90,9 @@ export default function RealEstateDetail() {
         <div className="real-estate-container">
             <SearchBar />
             <div className="real-estate-main">
+
                 <div className="real-estate-info">
+                    <DetailCarousel />
                     <RealEstateInfo />
                 </div>
                 <div className="info-owner-container">
