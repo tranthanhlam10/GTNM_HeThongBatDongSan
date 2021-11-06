@@ -120,24 +120,24 @@ export default function Header() {
   return (
     <div classname="header-info-container">
       <div className="navbar-info">
-        <li className="info-left">
+        <ul className="info-left">
           <img src={mail} className="info-email" />
           <a href="batdongsan@gmail.com">batdongsan@gmail.com</a>
           <img src={iphone} className="info-phone" />
           <a href="1800-1800">1800-1800</a>
-          <ul className="info-right">
-            <li className="header-navbar login">
-              <Link to="/login" className="navbar-link">
-                Đăng nhập
-              </Link>
-            </li>
-            <li>
-              <Link to="/register" className="register">
-                Đăng kí
-              </Link>
-            </li>
-          </ul>
-        </li>
+        </ul>
+        <ul className="info-right">
+          <li className="header-navbar login">
+            <Link to="/login" className="navbar-link">
+              Đăng nhập
+            </Link>
+          </li>
+          <li>
+            <Link to="/register" className="register">
+              Đăng kí
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="header-container">
         <ul className="header-col">

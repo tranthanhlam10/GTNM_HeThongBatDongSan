@@ -2,16 +2,23 @@
 
 /*CSS cho 2 tab nhà đất*/
 
+.search-banner {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
 .search-tab {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 /*CSS cho list tab nhà đất*/
-.search-tab li {
-  display: inline-block;
-}
+
 /*CSS cho form Search(Không bao gồm 2 tab*/
 .search-form {
   background-color: rgba(0, 0, 0, 0.6);
@@ -79,22 +86,24 @@
 
 /*CSS cho nút các nút tùy chọn*/
 .searching-option {
+  line-height: inherit;
   display: flex;
-
   flex-wrap: nowrap;
-  flex-flow: row nowrap;
+  align-items: center;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 10px;
 }
 .option-nationwade {
   display: flex;
   align-items: center;
   line-height: inherit;
   height: 40px;
-  padding: 0 15px;
-  position: relative;
-  border: 1 px solid #878988;
-  border-radius: 100;
-  flex: 0 0 164 px;
   cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 0 15 px;
+  margin-right: 10px;
 }
 .option-price {
   display: flex;
@@ -102,21 +111,22 @@
   line-height: inherit;
   height: 40px;
   padding: 0 15px;
-  position: relative;
-  border: 1 px solid #878988;
-  flex: 0 0 164 px;
   cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin-right: 10px;
 }
+
 .option-area {
   display: flex;
   align-items: center;
   line-height: inherit;
   height: 40px;
   padding: 0 15px;
-  position: relative;
-  border: 1 px solid #878988;
-  flex: 0 0 164 px;
   cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .option-project {
@@ -125,10 +135,10 @@
   line-height: inherit;
   height: 40px;
   padding: 0 15px;
-  position: relative;
-  border: 1 px solid #878988;
-  flex: 0 0 164 px;
   cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 .option-filter {
   display: flex;
@@ -136,8 +146,28 @@
   line-height: inherit;
   height: 40px;
   padding: 0 15px;
-  position: relative;
-  border: 1 px solid #878988;
-  flex: 0 0 164 px;
   cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/*CSS cho phần tựa đề dự án*/
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Asap-Medium", sans-serif;
+  font-size: 21px;
+  padding-bottom: 15px;
+  position: relative;
+
+  margin-top: 15px;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15 px;
 }
