@@ -1,0 +1,83 @@
+.hot-card-info-container {
+  width: 235px;
+  box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.15);
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+}
+.hot-card-img {
+  height: 200px;
+  width: 100%;
+}
+.hot-card-img > img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.hot-card-info {
+  padding: 12px 16px 13px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.hot-card-title {
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.hot-card-title-icon-container {
+  display: flex;
+}
+.hot-card-icon-heart,
+.hot-card-icon-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-radius: 50%;
+  background: #a1847433;
+  width: 24px;
+}
+.hot-card-icon-heart {
+  margin-right: 16px;
+}
+
+.con-hot-card-price {
+  margin-top: 12px;
+  display: flex;
+}
+.hot-card-price {
+  font-weight: 500;
+  font-size: 14px;
+}
+.con-hot-card-address {
+  margin-top: 12px;
+  display: flex;
+}
+.hot-card-address {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.con-hot-card-area {
+  margin-top: 12px;
+  display: flex;
+}
+.hot-card-area {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.con-hot-card-juridical {
+  margin-top: 12px;
+  display: flex;
+}
+.hot-card-juridical {
+  font-size: 14px;
+  font-weight: 500;
+}

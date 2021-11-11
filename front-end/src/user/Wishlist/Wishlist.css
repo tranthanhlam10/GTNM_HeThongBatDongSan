@@ -1,0 +1,26 @@
+.wish-list-container {
+  padding-left: 15px;
+}
+.wish-title {
+  font-weight: bold;
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+}
+.wish-description {
+  margin-top: 2px;
+}
+.con-wish-button {
+  margin: 10px;
+  padding: 10px;
+}
+.wish-button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  float: right;
+  width: 200px;
+  padding: 5px 32px 5px 16px;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+}

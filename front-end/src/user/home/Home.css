@@ -1,158 +1,8 @@
-/*CSS cho banner search*/
-
 /*CSS cho 2 tab nhà đất*/
-
-.search-banner {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
+.home-container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
-.search-tab {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-/*CSS cho list tab nhà đất*/
-
-/*CSS cho form Search(Không bao gồm 2 tab*/
-.search-form {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-}
-/*CSS cho tab buying*/
-.search-tab-buying {
-  background: #a18474;
-  border-radius: 5px 5px 0px 0px;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-/*CSS tab rent*/
-.search-tab-rent {
-  background: #a18474;
-  border-radius: 5px 5px 0px 0px;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-/*CSS cho nguyen thanh tìm kiếm*/
-.searching-bar {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  line-height: 45px;
-  border-radius: 4px;
-  background: #fff;
-  color: #3f3424;
-}
-/*CSS cho box loại bất động sản*/
-.option-box {
-  line-height: inherit;
-  padding: 0 15px;
-  overflow: hidden;
-  float: left;
-  max-width: 95%;
-  text-overflow: ellipsis;
-  white-space: nowrap !important;
-  vertical-align: middle;
-}
-/*CSS cho thanh input*/
-.search-input {
-  flex: 1;
-  line-height: inherit;
-  height: inherit;
-  padding: 0 15px;
-  position: relative;
-}
-/*CSS cho nút tìm kím trong thanh seacrh*/
-.button-search {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  font-size: 15px;
-  border: none;
-  line-height: inherit;
-  color: #fff;
-  background: #a18474;
-  cursor: pointer;
-}
-
-/*CSS cho nút các nút tùy chọn*/
-.searching-option {
-  line-height: inherit;
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  height: 45px;
-  line-height: 45px;
-  margin-top: 10px;
-}
-.option-nationwade {
-  display: flex;
-  align-items: center;
-  line-height: inherit;
-  height: 40px;
-  cursor: pointer;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  padding: 0 15 px;
-  margin-right: 10px;
-}
-.option-price {
-  display: flex;
-  align-items: center;
-  line-height: inherit;
-  height: 40px;
-  padding: 0 15px;
-  cursor: pointer;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.option-area {
-  display: flex;
-  align-items: center;
-  line-height: inherit;
-  height: 40px;
-  padding: 0 15px;
-  cursor: pointer;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.option-project {
-  display: flex;
-  align-items: center;
-  line-height: inherit;
-  height: 40px;
-  padding: 0 15px;
-  cursor: pointer;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-.option-filter {
-  display: flex;
-  align-items: center;
-  line-height: inherit;
-  height: 40px;
-  padding: 0 15px;
-  cursor: pointer;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-/*CSS cho phần tựa đề dự án*/
 
 .title {
   display: flex;
@@ -161,8 +11,6 @@
   font-family: "Asap-Medium", sans-serif;
   font-size: 21px;
   padding-bottom: 15px;
-  position: relative;
-
   margin-top: 15px;
 }
 .description {
@@ -170,4 +18,25 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 15 px;
+}
+
+.more-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.button-more-product {
+  font-size: 20px;
+  background: #ef5350;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #fff;
+}
+.material-icons {
+  padding-top: 3px;
 }

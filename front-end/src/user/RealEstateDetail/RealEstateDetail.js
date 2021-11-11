@@ -94,7 +94,6 @@ export default function RealEstateDetail() {
           <ReCarousel />
           <RealEstateInfo />
           <CarouselOwl />
-          <CarouselOwl />
         </div>
         <div className="info-owner-container">
           <InfoBox />
