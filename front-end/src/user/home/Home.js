@@ -3,6 +3,7 @@ import "./Home.css";
 import HomeCarouselOwl from "./RealEstateHotList";
 import ReAdsProduct from "./ReAdsProduct";
 import HomeSearchBar from "./HomeSearchBar";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
         <HomeCarouselOwl />
         <div className="more-product">
           <button className="button-more-product">
-            Xem tất cả dự án
+            <Link to="/searchinglist"> Xem tất cả dự án</Link>
             <span className="material-icons">arrow_forward</span>
           </button>
         </div>

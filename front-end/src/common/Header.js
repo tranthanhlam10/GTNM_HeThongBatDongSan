@@ -173,7 +173,7 @@ export default function Header() {
             </li>
             <li className="navbar-createFeed">
               <span className="material-icons">add</span>
-              <Link>Đăng tin</Link>
+              <Link to="/wishlist">Đăng tin</Link>
             </li>
           </ul>
         </ul>

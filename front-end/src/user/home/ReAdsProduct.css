@@ -23,4 +23,6 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 15px;
+  display: flex;
+  align-self: stretch;
 }

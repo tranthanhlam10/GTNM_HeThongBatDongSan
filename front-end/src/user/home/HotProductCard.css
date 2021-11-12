@@ -5,7 +5,6 @@
   border-radius: 10px;
   display: flex;
   align-self: stretch;
-  align-items: center;
 }
 .hot-card-img {
   height: 200px;
@@ -28,6 +27,7 @@
   justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
+  flex: 0 0 70px;
 }
 
 .hot-card-title-icon-container {
@@ -42,6 +42,10 @@
   border-radius: 50%;
   background: #a1847433;
   width: 24px;
+}
+
+.hot-card-detail {
+  flex: 0 0 25px;
 }
 .hot-card-icon-heart {
   margin-right: 16px;
