@@ -1,26 +1,37 @@
 .wish-card {
   padding: 10px;
+
   display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 10px;
 }
 
 .wish-card-content {
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
   background: #ffb6005e;
   padding: 5px;
   flex-direction: column;
+  padding-left: 20px;
+}
+
+.wish-card-image {
+  display: flex;
+  align-self: stretch;
 }
 .wish-card-name {
   font-size: 19px;
   font-weight: 600;
   color: #000;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .wish-card-time {
   display: flex;
   align-items: center;
   font-size: 13px;
-  margin-bottom: 15 px;
+  margin-bottom: 20px;
 }
 
 .wish-card-price {
@@ -29,12 +40,12 @@
   display: flex;
   align-items: center;
   font-size: 20px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
 }
 .wish-card-time {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .wish-detail {
@@ -42,7 +53,7 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid white;
-  padding-top: 28px;
+  padding-top: 12px;
 }
 .wish-card-area {
   display: flex;

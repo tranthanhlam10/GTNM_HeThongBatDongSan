@@ -25,35 +25,38 @@ export default function Wishlist() {
   return (
     <div className="wish-list-page">
       <SearchBar />
-      <div className="wish-list-container">
-        <div className="wish-title">
-          <p>Tin đăng đã lưu</p>
-        </div>
-        <div className="wish-description">
-          <p>Tổng số tin đã đăng</p>
-        </div>
-        <div className="con-wish-button">
-          <div className="wish-button">
-            <p>Lưu mới nhất</p>
-            <span className="material-icons">expand_more</span>
+      <div className="wish-list-content">
+        <div className="wish-list-container">
+          <div className="wish-heading">
+            <div className="wish-title">
+              <p>Tin đăng đã lưu</p>
+              <p>Tổng số tin đã đăng</p>
+            </div>
+            <div className="con-wish-button">
+              <div className="wish-button">
+                <p>Lưu mới nhất</p>
+                <span className="material-icons">expand_more</span>
+              </div>
+            </div>
+          </div>
+          <div className="wish-card-container">
+            {Wishcardlist.map((reCard, index) => {
+              return (
+                <div class="wish-item">
+                  <WishCard
+                    price={reCard.price}
+                    name={reCard.name}
+                    location={reCard.location}
+                    time={reCard.time}
+                    area={reCard.area}
+                    img={reCard.img}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className="wish-card-container">
-          {Wishcardlist.map((reCard, index) => {
-            return (
-              <div class="wish-item">
-                <WishCard
-                  price={reCard.price}
-                  name={reCard.name}
-                  location={reCard.location}
-                  time={reCard.time}
-                  area={reCard.area}
-                  img={reCard.img}
-                />
-              </div>
-            );
-          })}
-        </div>
+        <div className="wish-list-ads"></div>
       </div>
     </div>
   );
