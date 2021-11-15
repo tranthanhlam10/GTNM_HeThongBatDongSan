@@ -78,40 +78,30 @@ export default function HomeSearchBar() {
             <button className="button-search">
               <span className="material-icons">search</span>
               <i className="icon-search"></i>
-              Tìm kiếm
+              <span>Tìm kiếm</span>
             </button>
           </div>
 
           <div className="searching-option">
-            <div className="option-nationwade">
-              Toàn quốc
-              <div className="option-label">
-                <span className="material-icons">expand_more</span>
-              </div>
+            <div className="home-searchbar-option">
+              <span>Toàn quốc</span>
+              <span className="material-icons">expand_more</span>
             </div>
-            <div className="option-price">
-              Mức giá
-              <div className="option-label">
-                <span className="material-icons">expand_more</span>
-              </div>
+            <div className="home-searchbar-option">
+              <span>Mức giá</span>
+              <span className="material-icons">expand_more</span>
             </div>
-            <div className="option-area">
-              Diện tích
-              <div className="option-label">
-                <span className="material-icons">expand_more</span>
-              </div>
+            <div className="home-searchbar-option">
+              <span>Diện tích</span>
+              <span className="material-icons">expand_more</span>
             </div>
-            <div className="option-project">
-              Dự án
-              <div className="option-label">
-                <span className="material-icons">expand_more</span>
-              </div>
+            <div className="home-searchbar-option">
+              <span>Dự án</span>
+              <span className="material-icons">expand_more</span>
             </div>
-            <div className="option-filter">
-              Lọc thêm
-              <div className="option-label">
-                <span className="material-icons">filter_list</span>
-              </div>
+            <div className="home-searchbar-option">
+              <span>Lọc thêm</span>
+              <span className="material-icons">filter_list</span>
             </div>
           </div>
         </div>

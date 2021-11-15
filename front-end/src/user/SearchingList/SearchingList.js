@@ -360,36 +360,6 @@ const newProjectList = [
         name: 'THE BEVERLY',
         location: 'Quận 9, Hồ Chí Minh',
     },
-    {
-        link: '',     //này là cái link gửi request mình BE nè
-        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
-        name: 'THE BEVERLY',
-        location: 'Quận 9, Hồ Chí Minh',
-    },
-    {
-        link: '',     //này là cái link gửi request mình BE nè
-        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
-        name: 'THE BEVERLY',
-        location: 'Quận 9, Hồ Chí Minh',
-    },
-    {
-        link: '',     //này là cái link gửi request mình BE nè
-        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
-        name: 'THE BEVERLY',
-        location: 'Quận 9, Hồ Chí Minh',
-    },
-    {
-        link: '',     //này là cái link gửi request mình BE nè
-        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
-        name: 'THE BEVERLY',
-        location: 'Quận 9, Hồ Chí Minh',
-    },
-    {
-        link: '',     //này là cái link gửi request mình BE nè
-        img: 'https://cdn.houseviet.vn/images/project/20102021/the-beverly-s.jpg',
-        name: 'THE BEVERLY',
-        location: 'Quận 9, Hồ Chí Minh',
-    },
 ]
 
 

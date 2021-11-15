@@ -6,7 +6,7 @@
 
   }
   .footer-center {
-    width: var(--container-width);
+    width: 1170px;
     margin: auto;
     padding: 48px 0 24px;
   }

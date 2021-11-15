@@ -3,6 +3,11 @@
   max-width: 1170px;
   margin: 0 auto;
 }
+.home-container-center{
+  width: var(--container-width);
+  margin: auto;
+  padding: 48px 0 24px;
+}
 
 .title {
   display: flex;

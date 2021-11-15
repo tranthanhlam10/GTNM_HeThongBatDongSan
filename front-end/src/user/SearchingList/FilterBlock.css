@@ -15,7 +15,12 @@
     padding: 8px 15px;
 }
 .filter-item{
-    padding: 5px 15px;
+    padding: 10px 15px;
     color: #3f3424;
     font-size: 14px;
+    cursor: pointer;
+}
+.filter-item:hover {
+    transform: translateX(15px);
+    color: var(--main-color);
 }

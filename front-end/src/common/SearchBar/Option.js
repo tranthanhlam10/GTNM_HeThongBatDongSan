@@ -21,7 +21,7 @@ export default function Option(props) {
                         optionItems.map((item, index) => {
                             return (
                                 <li onClick={() => setDisplayName(item.itemName)} className="option-item">
-                                    <p>{item.itemName}</p>
+                                    <div className="option-item-name">{item.itemName}</div>
                                     {
                                         isArrowRight && <span className="material-icons icon-arrow-right">
                                             navigate_next

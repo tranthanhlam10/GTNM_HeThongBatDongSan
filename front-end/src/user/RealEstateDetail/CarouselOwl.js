@@ -74,6 +74,8 @@ export default function CarouselOwl() {
         items={3}
         margin={24}
         nav
+        autoplay={true}
+        autoplayTimeout={1000}
         loop
         dots={false}
         autoWidth

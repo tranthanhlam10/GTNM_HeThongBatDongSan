@@ -121,19 +121,27 @@ export default function Header() {
     <div classname="header-info-container">
       <div className="navbar-info">
         <ul className="info-left">
-          <img src={mail} className="info-email" />
-          <a href="batdongsan@gmail.com">batdongsan@gmail.com</a>
-          <img src={iphone} className="info-phone" />
-          <a href="1800-1800">1800-1800</a>
+          <li className="info-left-first">
+            <span class="material-icons info-left-icon">
+              email
+            </span>
+            <a href="batdongsan@gmail.com">batdongsan@gmail.com</a>
+          </li>
+          <li>
+            <span class="material-icons info-left-icon">
+              phone_in_talk
+            </span>
+            <a href="1800-1800">1800-1800</a>
+          </li>
         </ul>
         <ul className="info-right">
-          <li className="header-navbar login">
-            <Link to="/login" className="navbar-link">
+          <li>
+            <Link to="/login" className="login-btn">
               Đăng nhập
             </Link>
           </li>
           <li>
-            <Link to="/register" className="register">
+            <Link to="/register" className="register-btn">
               Đăng kí
             </Link>
           </li>
@@ -156,7 +164,7 @@ export default function Header() {
                 <ul className="navbar-hover-list">
                   {item.dropDownItems.map((item, index) => {
                     return (
-                      <li key={index}>
+                      <li className="navbar-hover-item" key={index}>
                         <Link to={item.link}>{item.displayName}</Link>
                       </li>
                     );
@@ -165,17 +173,17 @@ export default function Header() {
               </li>
             );
           })}
-          <ul className="header-col">
-            <li>
-              <Link to="" classname="heart-icon">
-                <img src={heart} alt="heart" />
-              </Link>
-            </li>
-            <li className="navbar-createFeed">
-              <span className="material-icons">add</span>
-              <Link to="/wishlist">Đăng tin</Link>
-            </li>
-          </ul>
+        </ul>
+        <ul className="header-col">
+          <li>
+            <Link to="" classname="heart-icon">
+              <img src={heart} alt="heart" />
+            </Link>
+          </li>
+          <li className="navbar-createFeed">
+            <span className="material-icons">add</span>
+            <Link>Đăng tin</Link>
+          </li>
         </ul>
       </div>
     </div>

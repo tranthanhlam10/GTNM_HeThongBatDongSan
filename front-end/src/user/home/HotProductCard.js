@@ -13,31 +13,23 @@ export default function HotProductCard(props) {
         <div className="hot-card-info">
           <div className="hot-card-title">
             <p>{name}</p>
-            <div className="hot-card-title-icon-container">
-              <div className="hot-card-icon-heart">
-                <img src={heart1} />
-              </div>
-              <div className="hot-card-icon-share">
-                <img src={share1} />
-              </div>
-            </div>
           </div>
           <div className="hot-card-detail">
-            <div className="con-hot-card-price">
+            <div className="con-hot-card">
               <span className="material-icons">local_offer</span>
-              <p className="hot-card-price">{price}</p>
+              <p className="hot-card">{price}</p>
             </div>
-            <div className="con-hot-card-address">
+            <div className="con-hot-card">
               <span className="material-icons">location_on</span>
-              <p className="hot-card-address">{address}</p>
+              <p className="hot-card">{address}</p>
             </div>
-            <div className="con-hot-card-juridical">
+            <div className="con-hot-card">
               <span className="material-icons">gavel</span>
-              <p className="hot-card-juridical">{juridical}</p>
+              <p className="hot-card">{juridical}</p>
             </div>
-            <div className="con-hot-card-area">
+            <div className="con-hot-card">
               <span className="material-icons">layers</span>
-              <p className="hot-card-area">{areainfo}</p>
+              <p className="hot-card">{areainfo}</p>
             </div>
           </div>
         </div>

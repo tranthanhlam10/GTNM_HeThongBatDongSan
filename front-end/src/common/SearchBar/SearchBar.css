@@ -49,12 +49,12 @@
     padding: 10px;
     outline: none;
     font-size:14px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .input-container > span{
     position: absolute;
-    top: 18px;
-    left: 20px;
+    top: 15px;
+    left: 40px;
     padding-right: 10px;
     border-right: 1px solid #dedede;
     color: #dedede;

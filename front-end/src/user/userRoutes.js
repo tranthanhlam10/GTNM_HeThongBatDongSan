@@ -6,8 +6,8 @@ import SearchingList from "./SearchingList/SearchingList";
 import RealEstateDetail from "./RealEstateDetail/RealEstateDetail";
 const userRoutes = [
   {
-    path: "",
-    exact: false,
+    path: "/",
+    exact: true,
     main: () => <Home />,
   },
   {
@@ -26,7 +26,7 @@ const userRoutes = [
     main: () => <RealEstateDetail />,
   },
   {
-    path: "not",
+    path: "",
     exact: false,
     main: () => <NotFound />,
   },
