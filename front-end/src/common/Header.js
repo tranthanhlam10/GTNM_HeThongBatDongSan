@@ -8,110 +8,110 @@ import heart from "../assets/heart.png";
 const navbarItems = [
   {
     displayName: "Nhà đất bán",
-    link: "",
+    link: "/searchinglist",
     dropDownItems: [
       {
         displayName: "Bán căn hộ chung cư",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán nhà riêng, nhà mặt phố",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán biệt thự, nhà liền kề",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán đất nền",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán đất thổ cư",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán tòa nhà văn phòng",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán căn hộ CONDOTEL",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán đất trang trại, nghỉ dưỡng",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán kho, nhà xưởng, kiot",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Bán nhà đất khác",
-        link: "",
+        link: "/searchinglist",
       },
     ],
   },
   {
     displayName: "Nhà đất cho thuê",
-    link: "",
+    link: "/searchinglist",
     dropDownItems: [
       {
         displayName: "Cho thuê căn hộ chung cư",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê phòng trọ, nhà trọ",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê văn phòng",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê nhà riêng, nhà mặt phố",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê căn hộ CONDOTEL",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê căn hộ OFICETEL",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê cửa hàng, kiot",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê kho, nhà xưởng",
-        link: "",
+        link: "/searchinglist",
       },
       {
         displayName: "Cho thuê nhà đất khác",
-        link: "",
+        link: "/searchinglist",
       },
     ],
   },
   {
     displayName: "Phòng họp",
-    link: "",
+    link: "/searchinglist",
     dropDownItems: [],
   },
   {
     displayName: "Tin tức",
-    link: "",
+    link: "/searchinglist",
     dropDownItems: [],
   },
   {
     displayName: "Thông tin",
-    link: "",
+    link: "/searchinglist",
     dropDownItems: [],
   },
   {
     displayName: "Liên hệ",
-    link: "",
+    link: "/searchinglist",
     dropDownItems: [],
   },
 ];

@@ -1,3 +1,4 @@
+
 .header-container {
   display: flex;
   align-items: center;
@@ -123,7 +124,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  background-color: #ef5350;
+  background-color: red;
   border-radius: 10px;
   padding: 0px 8px 0px 8px;
   margin-left: 5px;
@@ -132,7 +133,7 @@
 }
 
 .navbar-createFeed:hover {
-  background-color: red;
+  background-color: #ef5350;
 }
 .login-btn{
   border-right: 1px solid #fff;
