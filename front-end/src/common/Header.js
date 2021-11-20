@@ -2,8 +2,6 @@ import React from "react";
 import "./Header.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
-import mail from "../assets/mail.png";
-import iphone from "../assets/iphone.png";
 import heart from "../assets/heart.png";
 const navbarItems = [
   {
@@ -122,15 +120,11 @@ export default function Header() {
       <div className="navbar-info">
         <ul className="info-left">
           <li className="info-left-first">
-            <span class="material-icons info-left-icon">
-              email
-            </span>
+            <span class="material-icons info-left-icon">email</span>
             <a href="batdongsan@gmail.com">batdongsan@gmail.com</a>
           </li>
           <li>
-            <span class="material-icons info-left-icon">
-              phone_in_talk
-            </span>
+            <span class="material-icons info-left-icon">phone_in_talk</span>
             <a href="1800-1800">1800-1800</a>
           </li>
         </ul>
@@ -176,13 +170,13 @@ export default function Header() {
         </ul>
         <ul className="header-col">
           <li>
-            <Link to="" classname="heart-icon">
+            <Link to="/wishlist" classname="heart-icon">
               <img src={heart} alt="heart" />
             </Link>
           </li>
           <li className="navbar-createFeed">
             <span className="material-icons">add</span>
-            <Link>Đăng tin</Link>
+            <p>Đăng tin</p>
           </li>
         </ul>
       </div>
