@@ -50,7 +50,7 @@ export default function RePlace() {
                 <p>Bất động sản theo địa điểm</p>
             </div>
             <div className="re-place-big re-place-float">
-                <Link to="/realestate">
+                <Link to="/searchinglist">
                     <img className="re-place-img" src={HCMImages[currentImage]} />
                     <div className="re-place-big-title">
                         <span>TP. Hồ Chí Minh</span>
@@ -60,7 +60,7 @@ export default function RePlace() {
             </div>
             <ul className="re-place-small-container">
                 <li className=" re-place-small re-place-float re-place-mb">
-                    <Link to="/realestate">
+                    <Link to="/searchinglist">
                         <img className="re-place-img" src={DongNaiImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Đồng Nai</span>
@@ -69,7 +69,7 @@ export default function RePlace() {
                     </Link>
                 </li>
                 <li className="re-place-small re-place-float re-place-mb">
-                    <Link to="/realestate">
+                    <Link to="/searchinglist">
                         <img className="re-place-img" src={DaLatImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Đà Lạt</span>
@@ -78,7 +78,7 @@ export default function RePlace() {
                     </Link>
                 </li>
                 <li className="re-place-small re-place-float">
-                    <Link to="/realestate">
+                    <Link to="/searchinglist">
                         <img className="re-place-img" src={DaNangImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Đà Nẵng</span>
@@ -87,7 +87,7 @@ export default function RePlace() {
                     </Link>
                 </li>
                 <li className="re-place-small re-place-float">
-                    <Link to="/realestate">
+                    <Link to="/searchinglist">
                         <img className="re-place-img" src={HaNoiImages[currentImage]} />
                         <div className="re-place-small-title">
                             <span>Hà Nội</span>
