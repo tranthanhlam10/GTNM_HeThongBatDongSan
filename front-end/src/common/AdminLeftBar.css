@@ -1,15 +1,16 @@
 /* Fixed sidenav, full height */
 .admin-left-bar {
-  height: 100%;
   width: 15%;
-  position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #cfa267;
   overflow-x: hidden;
   padding-top: 20px;
   color: white;
-  justify-content: center;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
 }
 
 .admin-option,
@@ -17,8 +18,8 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #818181;
   display: block;
+
   border: none;
   background: none;
   width: 100%;
@@ -28,7 +29,20 @@
   justify-content: center;
   color: white;
 }
+.lb-header {
+  font-size: 24px;
+}
 
+.lb-header > a {
+  display: flex;
+}
+.lb-realestate {
+  margin-top: 30px;
+}
+.dropdown-btn > a {
+  display: flex;
+  align-items: center;
+}
 .dropdown-btn:hover {
   color: #f1f1f1;
 }
@@ -41,7 +55,7 @@
 
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #cfa267;
   padding-left: 8px;
 }
 

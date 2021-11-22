@@ -3,17 +3,21 @@ import "./AdminLeftBar.css";
 import { Link } from "react-router-dom";
 export default function AdminLeftbar() {
   return (
-    <div class="admin-left-bar">
+    <div className="admin-left-bar">
       <div className="lb-header">
-        <span class="material-icons">home</span>
-        Trang chủ
+        <a>
+          <span class="material-icons">home</span>
+          <span>Trang chủ </span>
+        </a>
       </div>
       <div className="lb-realestate">
-        <button class="dropdown-btn" onClick={Dropdown}>
-          <span class="material-icons">real_estate_agent</span>
-          Nhà đất
+        <button className="dropdown-btn" onClick={Dropdown}>
+          <a>
+            <span className="material-icons">real_estate_agent</span>
+            <span>Nhà đất</span>
+          </a>
         </button>
-        <div class="dropdown-container">
+        <div className="dropdown-container">
           <Link className="admin-option" to="/admin/realestatemanagement">
             Quản lí nhà đất
           </Link>
@@ -23,12 +27,15 @@ export default function AdminLeftbar() {
         </div>
       </div>
       <div className="lb-project">
-        <button class="dropdown-btn" onClick={Dropdown}>
-          <span class="material-icons">villa</span>
-          Dự án
+        <button className="dropdown-btn" onClick={Dropdown}>
+          <a>
+            <span className="material-icons">villa</span>
+            <span> Dự án </span>
+          </a>
         </button>
-        <div class="dropdown-container">
-          <Link className="admin-option" to="/admin">
+
+        <div className="dropdown-container">
+          <Link className="admin-option" to="/admin/projectmanagement">
             Quản lí dự án
           </Link>
           <Link className="admin-option" to="/admin/projectdetail">
@@ -37,11 +44,13 @@ export default function AdminLeftbar() {
         </div>
       </div>
       <div className="lb-account">
-        <button class="dropdown-btn" onClick={Dropdown}>
-          <span class="material-icons">account_circle</span>
-          Tài khoản
+        <button className="dropdown-btn" onClick={Dropdown}>
+          <a>
+            <span className="material-icons">account_circle</span>
+            <span> Tài khoản </span>
+          </a>
         </button>
-        <div class="dropdown-container">
+        <div className="dropdown-container">
           <Link className="admin-option" to="/admin/usermanagement">
             Quản lí tài khoản
           </Link>
@@ -51,9 +60,11 @@ export default function AdminLeftbar() {
         </div>
       </div>
       <div className="lb-analytics">
-        <button class="dropdown-btn" onClick={Dropdown}>
-          <span class="material-icons">analytics</span>
-          Thống kê
+        <button className="dropdown-btn" onClick={Dropdown}>
+          <a>
+            <span className="material-icons">analytics</span>
+            <span>Thống kê</span>
+          </a>
         </button>
       </div>
     </div>

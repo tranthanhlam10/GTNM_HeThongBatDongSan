@@ -1,0 +1,71 @@
+/* .container {
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+} */
+
+.admin-pd-content {
+  flex: 1;
+  text-align: center;
+}
+.admin-pd-header {
+  margin-bottom: 1rem;
+}
+.admin-pd-content-detail {
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.admin-pd-detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+.infor:not(:last-child) {
+  padding-bottom: 2rem;
+}
+
+.infor {
+  font-weight: bold;
+}
+.admin-pd-moreinfo {
+  padding: 2rem;
+}
+
+.description {
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.action {
+  display: flex;
+  margin: 3rem;
+  justify-content: flex-end;
+}
+.btn--save-pd,
+.btn--delete-pd {
+  border: none;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-left: 2rem;
+}
+.btn--save-pd {
+  background-color: rgba(17, 231, 17, 0.479);
+}
+.btn--save-pd:hover {
+  background-color: rgba(17, 231, 17, 0.685);
+
+  cursor: pointer;
+}
+.btn--delete-pd {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+.btn--delete-pd:hover {
+  background-color: rgba(255, 0, 0, 0.712);
+  cursor: pointer;
+}
