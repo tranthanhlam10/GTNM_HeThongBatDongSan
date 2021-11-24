@@ -51,6 +51,13 @@ const ProjectHomeOption = [
 export default function HomeSearchBar() {
   const history = useHistory()
   const [isLoading, setIsLoading] = useState(false)
+  const [selectTab, setSelectTab] = useState()
+
+  const [backgroundSell, setBackgroundSell] = useState('rgba(0,0,0,.6)')
+  const [backgroundRent, setBackgroundRent] = useState('rgba(255,255,255,.6)')
+  const [colorSell, setColorSell] = useState('#fff')
+  const [colorRent, setColorRent] = useState('#000')
+  const [isSelectSell, setIsSelectSell] = useState(true)
   const handleLoading = () => {
     setIsLoading(true)
     setTimeout(() => {
@@ -67,6 +74,29 @@ export default function HomeSearchBar() {
     {<Loading />}
   </button>
 
+  const sellStyle = {
+    background: backgroundSell,
+    color: colorSell,
+    // backgroundColor: this.state.backgroundColor
+  }
+
+  const rentStyle = {
+    background: backgroundRent,
+    color: colorRent,
+  }
+
+  const handleClickSell = () => {
+    setBackgroundRent('rgba(255,255,255,.6)')
+    setColorRent('#000')
+    setBackgroundSell('rgba(0,0,0,.6)')
+    setColorSell('#fff')
+  }
+  const handleClickRent = () => {
+    setBackgroundSell('rgba(255,255,255,.6)')
+    setColorSell('#000')
+    setBackgroundRent('rgba(0,0,0,.6)')
+    setColorRent('#fff')
+  }
 
 
 
@@ -81,14 +111,16 @@ export default function HomeSearchBar() {
       ></iframe>
       <div className="search-tab-form">
         <div className="search-tab">
-          <div className="search-tab-buying">Nhà đất bán</div>
-          <div className="search-tab-rent">Nhà đất cho thuê</div>
+          <div className="search-tab-buying" style={sellStyle} onClick={handleClickSell}>Nhà đất bán</div>
+          <div className="search-tab-rent" style={rentStyle} onClick={handleClickRent}>Nhà đất cho thuê</div>
         </div>
         <div className="search-form">
           <div className="searching-bar">
-            <div className="option-box">Loại bất động sản</div>
-            <div className="option-label">
-              <span className="material-icons">expand_more</span>
+            <div className="realestate-type-btn">
+              <div className="option-box">Loại bất động sản</div>
+              <div className="option-label">
+                <span className="material-icons">expand_more</span>
+              </div>
             </div>
             <div className="option-icon">
               <Link></Link>

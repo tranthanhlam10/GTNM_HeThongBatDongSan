@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Option.css'
 
 export default function Option(props) {
     const [displayName, setDisplayName] = useState('Tất cả');
-    const { title, optionItems, isArrowRight = false } = props;
+    const { title, optionItems } = props;
 
     return (
         <div className="option-container">
@@ -22,11 +22,6 @@ export default function Option(props) {
                             return (
                                 <li onClick={() => setDisplayName(item.itemName)} className="option-item">
                                     <div className="option-item-name">{item.itemName}</div>
-                                    {
-                                        isArrowRight && <span className="material-icons icon-arrow-right">
-                                            navigate_next
-                                        </span>
-                                    }
                                 </li>
                             );
                         })

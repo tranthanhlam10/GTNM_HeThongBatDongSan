@@ -21,50 +21,50 @@ export default function Register() {
 
     const [isValid, setIsValid] = useState(false)
 
-    function AlertDialog(text){
+    function AlertDialog(text) {
         alert(`${text}`);
     }
 
-    const validate = (event) =>{
+    const validate = (event) => {
         event.preventDefault()
 
-        if (!firstName){
+        if (!firstName) {
             setIsValidFirstName(false)
             AlertDialog('Tên không được để trống')
         }
         else {
             setIsValidFirstName(true)
-            if (!lastName){
+            if (!lastName) {
                 setIsValidLastName(false)
                 AlertDialog('Họ không được để trống')
             }
             else {
                 setIsValidLastName(true)
-                if (!lastName){
+                if (!lastName) {
                     setIsValidLastName(false)
                     AlertDialog('Họ không được để trống')
                 }
                 else {
                     setIsValidLastName(true)
-                    if (!email){
+                    if (!email) {
                         setIsValidEmail(false)
                         AlertDialog('Email không được để trống')
                     }
                     else {
                         setIsValidEmail(true)
-                        if (!password){
+                        if (!password) {
                             setIsValidPassword(false)
                             AlertDialog('Mật khẩu không được để trống')
                         }
                         else {
                             setIsValidPassword(true)
-                            if (!confirmPassword){
+                            if (!confirmPassword) {
                                 setIsValidConfirmPassword(false)
                                 AlertDialog('Vui lòng xác nhận lại mật khẩu')
                             }
                             else {
                                 setIsValidConfirmPassword(true)
-                                if (!checkBox){
+                                if (!checkBox) {
                                     setIsValidCheckBox(false)
                                     AlertDialog('Vui lòng đọc điều khoản!')
                                 }
@@ -103,36 +103,36 @@ export default function Register() {
                             <div className="full-name-container">
                                 <div className="name-input">
                                     <label for="name">First Name</label>
-                                    <input 
-                                        type="text" 
-                                        id="firstName" 
+                                    <input
+                                        type="text"
+                                        id="firstName"
                                         name="firstName"
                                         value={firstName}
-                                        onChange={event =>setFirstName(event.target.value)}
+                                        onChange={event => setFirstName(event.target.value)}
                                     />
                                 </div>
                                 {!isValidFirstName}
                                 <div className="fullname-input">
                                     <label for="lastname">Last Name</label>
-                                    <input 
-                                        type="text" 
-                                        id="lastName" 
+                                    <input
+                                        type="text"
+                                        id="lastName"
                                         name="lastName"
                                         value={lastName}
-                                        onChange={event =>setLastName(event.target.value)} 
+                                        onChange={event => setLastName(event.target.value)}
                                     />
                                 </div>
                                 {!isValidLastName}
-                            </div>                 
+                            </div>
                             <div className="email-container">
                                 <div className="email-input">
                                     <label for="email">Your Email</label>
-                                    <input 
-                                        type="email" 
-                                        id="email" 
+                                    <input
+                                        type="email"
+                                        id="email"
                                         name="email"
                                         value={email}
-                                        onChange={event =>setEmail(event.target.value)} 
+                                        onChange={event => setEmail(event.target.value)}
                                     />
                                 </div>
                                 {!isValidEmail}
@@ -140,42 +140,42 @@ export default function Register() {
                             <div className="pw-container">
                                 <div className="pw-input">
                                     <label for="pw">Password</label>
-                                    <input 
-                                        type="password" 
-                                        id="password" 
-                                        name="password" 
+                                    <input
+                                        type="password"
+                                        id="password"
+                                        name="password"
                                         value={password}
-                                        onChange={event =>setPassword(event.target.value)}
+                                        onChange={event => setPassword(event.target.value)}
                                     />
                                 </div>
                                 {!isValidPassword}
                                 <div className="confirm-pw-input">
                                     <label for="confirm-pw">Confirm Password</label>
-                                    <input 
-                                        type="password" 
-                                        id="confirmPassword" 
-                                        name="confirmPassword" 
+                                    <input
+                                        type="password"
+                                        id="confirmPassword"
+                                        name="confirmPassword"
                                         value={confirmPassword}
-                                        onChange={event =>setConfirmPassword(event.target.value)}
+                                        onChange={event => setConfirmPassword(event.target.value)}
                                     />
                                 </div>
                                 {!isValidconfirmPassword}
-                            </div>            
+                            </div>
                             <label for="tac" className="register-agree">
-                                <input 
-                                    id="chekcBox" 
-                                    type="checkBox" 
-                                    name="checkBox" 
+                                <input
+                                    id="chekcBox"
+                                    type="checkBox"
+                                    name="checkBox"
                                     value={checkBox}
-                                    onChange={event =>setCheckBox(event.target.value)}
+                                    onChange={event => setCheckBox(event.target.value)}
                                 />
-                                    I agree to the <span> Terms and Conditions</span>
+                                I agree to the <span> Terms and Conditions</span>
                                 {!isValidCheckBox}
                             </label>
                         </form>
                         <button className="register-button"
-                                onClick={validate}>
-                                {isValid ? loadingIcon : 'Login'}
+                            onClick={validate}>
+                            {/* {isValid ? loadingIcon : 'Login'} */}
                             Register
                         </button>
                     </div>

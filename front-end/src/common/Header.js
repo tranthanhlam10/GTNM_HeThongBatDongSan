@@ -3,6 +3,7 @@ import "./Header.css";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 import heart from "../assets/heart.png";
+
 const navbarItems = [
   {
     displayName: "Nhà đất bán",
@@ -170,13 +171,22 @@ export default function Header() {
         </ul>
         <ul className="header-col">
           <li>
-            <Link to="/wishlist" classname="heart-icon">
+            <Link to="/wishlist" className="heart-icon">
               <img src={heart} alt="heart" />
             </Link>
+            <div className="header-tooltip-container">
+              <div className="header-tooltip-content">
+                Danh sách tin đăng đã lưu
+                <span className="header-top-delta">
+                </span>
+              </div>
+            </div>
           </li>
-          <li className="navbar-createFeed">
-            <span className="material-icons">add</span>
-            <p>Đăng tin</p>
+          <li>
+            <Link to="/post" className="navbar-createFeed post-btn">
+              <span className="material-icons">add</span>
+              <p>Đăng tin</p>
+            </Link>
           </li>
         </ul>
       </div>

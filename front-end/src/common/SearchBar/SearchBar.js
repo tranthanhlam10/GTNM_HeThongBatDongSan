@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SearchBar.css";
 
 import Option from "./Option";
@@ -83,7 +83,7 @@ const areaItems = [
     itemName: "100 -> 150 m2",
   },
   {
-    itemName: "150 -> 300 m2",
+    itemName: "150 -> 300",
   },
   {
     itemName: "300 -> 500 m2",
@@ -92,7 +92,15 @@ const areaItems = [
     itemName: "Trên 500 m2",
   },
 ];
+
+
 export default function SearchBar() {
+
+  let isReset = false;
+  const handleClickReset = (e) => {
+    e.preventDefault()
+    isReset = true
+  }
   return (
     <div className="searchbar">
       <form action="" className="search-input">
@@ -101,22 +109,27 @@ export default function SearchBar() {
           <input placeholder="Nhập địa điểm hoặc dự án..." type="text"></input>
         </div>
         <Option
-          title={"Khu vực"}
-          optionItems={cityItems}
-          isArrowRight={"True"}
+          title={"Khu vực"} optionItems={cityItems}
         />
-        <Option title={"Mức giá"} optionItems={priceItems} />
-        <Option title={"Diện tích"} optionItems={areaItems} />
-        <Option title={"Dự án"} optionItems={areaItems} />
-        <Option title={"Phường/Xã"} optionItems={areaItems} />
-        <Option title={"Đường phố"} optionItems={areaItems} />
+        <Option isReset={isReset} title={"Mức giá"} optionItems={priceItems} />
+        <Option isReset={isReset} title={"Diện tích"} optionItems={areaItems} />
+        <Option isReset={isReset} title={"Dự án"} optionItems={areaItems} />
+        <Option isReset={isReset} title={"Phường/Xã"} optionItems={areaItems} />
+        <Option isReset={isReset} title={"Đường phố"} optionItems={areaItems} />
 
         <button className="search-btn">
           <span className="material-icons">search</span>
           <p1>Tìm kiếm</p1>
         </button>
-        <button className="reset-btn">
-          <span className="material-icons">delete</span>
+        <button className="reset-btn" onClick={handleClickReset}>
+          <span className="material-icons reset-icon">delete</span>
+          <div className="reset-tooltip-container">
+            <div className="reset-tooltip-content">
+              Xóa tiêu chí lọc
+              <span className="reset-top-delta">
+              </span>
+            </div>
+          </div>
         </button>
       </form>
     </div>
