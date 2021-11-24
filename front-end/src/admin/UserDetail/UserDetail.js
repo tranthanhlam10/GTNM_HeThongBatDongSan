@@ -45,8 +45,18 @@ export default function UserDetail() {
             <li>Nova</li>
           </ul>
           <div className="action">
-            <button className="btn--accept-usd">Lưu</button>
-            <button className="btn--delete-usd">Xóa</button>
+            <button className="btn--accept-usd">
+              <a>
+                <span class="material-icons">archive</span>
+                <p>Lưu</p>
+              </a>
+            </button>
+            <button className="btn--delete-usd">
+              <a>
+                <span class="material-icons">delete</span>
+                <p>Xóa</p>
+              </a>
+            </button>
           </div>
         </div>
       </div>

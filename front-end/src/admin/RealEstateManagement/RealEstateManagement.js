@@ -1,6 +1,10 @@
 import React from "react";
 import "./RealEstateManagement.css";
+import { useState } from "react";
+import PopUpAdd from "../AddAdminPopUp/PopUpAdd.js";
+import AddRealEstateDetail from "../AddAdminPopUp/AddRealEstateDetail";
 export default function RealEstateManagement() {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-rem-content">
       <h2 className="admin-rem-heading">ADMIN DASHBOARD</h2>
@@ -8,9 +12,19 @@ export default function RealEstateManagement() {
         <div className="admin-rem-table-content">
           <div></div>
           <h1 className="rem-table-title">Quản lý nhà đất</h1>
-          <button className="rem-btn-addre">
-            <p>Thêm nhà đất mới</p>
+          <button
+            className="rem-btn-addre"
+            onClick={() => setButtonPopup(true)}
+          >
+            <a>
+              <span class="material-icons">add_circle</span>
+              <p>Thêm nhà đất mới</p>
+            </a>
           </button>
+          <PopUpAdd trigger={buttonPopup} setTrigger={setButtonPopup}>
+            {" "}
+            <AddRealEstateDetail />
+          </PopUpAdd>
         </div>
         <div className="rem-search-bar">
           <input
@@ -35,9 +49,20 @@ export default function RealEstateManagement() {
             <td>Vinhomes</td>
             <td>15 tỷ</td>
             <td>Sài Gòn</td>
-            <td colspan="2">
-              <button className="btn--view-rem">View</button>
-              <button className="btn--delete-rem">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -45,9 +70,20 @@ export default function RealEstateManagement() {
             <td>Salah</td>
             <td>29 Tỷ</td>
             <td>Sài Gòn</td>
-            <td colspan="2">
-              <button className="btn--view-rem">View</button>
-              <button className="btn--delete-rem">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -55,9 +91,20 @@ export default function RealEstateManagement() {
             <td>KTX ĐHQG</td>
             <td>35 Tỷ</td>
             <td>Bình Dương</td>
-            <td colspan="2">
-              <button className="btn--view-rem">View</button>
-              <button className="btn--delete-rem">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -65,9 +112,20 @@ export default function RealEstateManagement() {
             <td>Suối Tiên</td>
             <td>20 tỷ</td>
             <td>Đồng Nai</td>
-            <td colspan="2">
-              <button className="btn--view-rem">View</button>
-              <button className="btn--delete-rem">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
         </table>
