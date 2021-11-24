@@ -50,8 +50,18 @@ export default function ProjectDetail() {
             iusto dolorum commodi nam cupiditate magni!
           </p>
           <div className="action">
-            <button className="btn--save-pd">Lưu</button>
-            <button className="btn--delete-pd">Xóa</button>
+            <button className="btn--save-pd">
+              <a>
+                <span class="material-icons">archive</span>
+                <p>Lưu</p>
+              </a>
+            </button>
+            <button className="btn--delete-pd">
+              <a>
+                <span class="material-icons">delete</span>
+                <p>Xóa</p>
+              </a>
+            </button>
           </div>
         </div>
       </div>

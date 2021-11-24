@@ -1,6 +1,10 @@
 import React from "react";
 import "./UserManagement.css";
+import { useState } from "react";
+import PopUpAdd from "../AddAdminPopUp/PopUpAdd.js";
+import AddUserDetail from "../AddAdminPopUp/AddUserDetail";
 export default function UserManagement() {
+  const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-usm-content">
       <h2 className="admin-usm-heading">ADMIN DASHBOARD</h2>
@@ -8,7 +12,15 @@ export default function UserManagement() {
         <div className="admin-usm-table-content">
           <div></div>
           <h1 className="usm-table-title">Quản lý tài khoản</h1>
-          <button className="usm-btn-addre">Thêm tài khoản mới</button>
+          <button
+            className="usm-btn-addre"
+            onClick={() => setButtonPopup(true)}
+          >
+            <a>
+              <span class="material-icons">add_circle</span>
+              <p>Thêm tài khoản mới</p>
+            </a>
+          </button>
         </div>
         <div className="usm-search-bar">
           <input
@@ -19,6 +31,10 @@ export default function UserManagement() {
           <button className="usm-search-button">
             <span className="material-icons">search</span>
           </button>
+          <PopUpAdd trigger={buttonPopup} setTrigger={setButtonPopup}>
+            {" "}
+            <AddUserDetail />
+          </PopUpAdd>
         </div>
         <table className="usm-table-re-detail">
           <tr>
@@ -33,9 +49,20 @@ export default function UserManagement() {
             <td>Nguyễn Thành Đạt</td>
             <td>ntdat@gmail.com</td>
             <td> 123</td>
-            <td colspan="2">
-              <button className="btn--view-usm">View</button>
-              <button className="btn--delete-usm">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -43,9 +70,20 @@ export default function UserManagement() {
             <td>Trần Thanh Lâm</td>
             <td>ttlam@gmail.com</td>
             <td> 123</td>
-            <td colspan="2">
-              <button className="btn--view-usm">View</button>
-              <button className="btn--delete-usm">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -53,9 +91,20 @@ export default function UserManagement() {
             <td>Nguyễn Thị Quỳnh Ngân</td>
             <td>ntqn@gamil.com</td>
             <td> 123</td>
-            <td colspan="2">
-              <button className="btn--view-usm">View</button>
-              <button className="btn--delete-usm">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -63,9 +112,20 @@ export default function UserManagement() {
             <td>Lương Duy Bảo</td>
             <td>ldbao@gamil.com</td>
             <td> 123</td>
-            <td colspan="2">
-              <button className="btn--view-usm">View</button>
-              <button className="btn--delete-usm">Delete</button>
+            <td colspan="2" className="admin-btn-function">
+              <button className="btn--view-rem">
+                <a>
+                  <span class="material-icons">pageview</span>
+                  <span>View</span>
+                </a>
+              </button>
+
+              <button className="btn--delete-rem">
+                <a>
+                  <span class="material-icons">delete</span>
+                  <span>Delete</span>
+                </a>
+              </button>
             </td>
           </tr>
         </table>
