@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SearchBar.css";
-
-import Option from "./Option";
+import ReactLoading from "react-loading";
+import { Link, useHistory } from "react-router-dom";
 const cityItems = [
   {
     itemName: "Tất cả",
@@ -63,7 +63,7 @@ const priceItems = [
     itemName: "10 -> 20 tỷ",
   },
 ];
-const areaItems = [
+const squareItems = [
   {
     itemName: "Tất cả",
   },
@@ -93,14 +93,111 @@ const areaItems = [
   },
 ];
 
+const projectItems = [
+  {
+    itemName: "Vinahomes Golden River",
+  },
+  {
+    itemName: "Saigon Centre",
+  },
+  {
+    itemName: "Dự án Masterise Ba Son",
+  },
+  {
+    itemName: "The Grand Manhattan",
+  },
+]
+
+const wardItems = [
+  {
+    itemName: "Quận 1",
+  },
+  {
+    itemName: "Quận 2",
+  },
+  {
+    itemName: "Quận Tân Bình",
+  },
+  {
+    itemName: "Quận Phú Nhận",
+  },
+  {
+    itemName: "Quận Bình Chánh",
+  },
+  {
+    itemName: "Quận 5",
+  },
+  {
+    itemName: "Quận 10",
+  },
+  {
+    itemName: "Quận 9",
+  },
+]
+const streetItems = [
+  {
+    itemName: "Đường Đinh Tiên Hoàng",
+  },
+  {
+    itemName: "Đường Âu Cơ",
+  },
+  {
+    itemName: "Đường Lạc Long Quân",
+  },
+  {
+    itemName: "Đường Cách mạng tháng 8",
+  },
+  {
+    itemName: "Đường Nguyễn Du",
+  },
+  {
+    itemName: "Đường Võ Thị Sáu",
+  },
+  {
+    itemName: "Đường Bùi Hữu Nghĩa",
+  },
+  {
+    itemName: "Đường Lý Thái Tổ",
+  },
+]
 
 export default function SearchBar() {
+  const history = useHistory()
 
-  let isReset = false;
-  const handleClickReset = (e) => {
+  const [displayPrice, setDisplayPrice] = useState('Tất cả')
+  const [displayCity, setDisplayCity] = useState('Tất cả')
+  const [displaySquare, setDisplaySquare] = useState('Tất cả')
+  const [displayProject, setDisplayProject] = useState('Tất cả')
+  const [displayWard, setDisplayWard] = useState('Tất cả')
+  const [displayStreet, setDisplayStreet] = useState('Tất cả')
+  const [isLoading, setIsLoading] = useState(false)
+  const handleReset = (e) => {
     e.preventDefault()
-    isReset = true
+    setDisplayPrice('Tất cả')
+    setDisplayCity('Tất cả')
+    setDisplaySquare('Tất cả')
+    setDisplayProject('Tất cả')
+    setDisplayWard('Tất cả')
+    setDisplayStreet('Tất cả')
   }
+
+  const handleLoading = (e) => {
+    e.preventDefault()
+    setIsLoading(true)
+    setTimeout(() => {
+      history.push('/searchinglist')
+    }, 3000)
+  }
+
+  const searchBtn = <button className="search-btn" onClick={handleLoading}>
+    <span className="material-icons">search</span>
+    <p1>Tìm kiếm</p1>
+  </button>
+
+  const loading = <button className="search-btn">
+    <ReactLoading type="bubbles" />
+  </button>
+
   return (
     <div className="searchbar">
       <form action="" className="search-input">
@@ -108,20 +205,142 @@ export default function SearchBar() {
           <span className="material-icons">search</span>
           <input placeholder="Nhập địa điểm hoặc dự án..." type="text"></input>
         </div>
-        <Option
-          title={"Khu vực"} optionItems={cityItems}
-        />
-        <Option isReset={isReset} title={"Mức giá"} optionItems={priceItems} />
-        <Option isReset={isReset} title={"Diện tích"} optionItems={areaItems} />
-        <Option isReset={isReset} title={"Dự án"} optionItems={areaItems} />
-        <Option isReset={isReset} title={"Phường/Xã"} optionItems={areaItems} />
-        <Option isReset={isReset} title={"Đường phố"} optionItems={areaItems} />
+        <div className="option-container">
+          <div className="option-label">
+            <p>Khu vực</p>
+            <span className="material-icons">
+              expand_more
+            </span>
+          </div>
+          <div className="option-section">{displayCity}</div>
+          <div className="option-list-container">
+            <ul className="option-list">
+              {
+                cityItems.map((item, index) => {
+                  return (
+                    <li key={index} onClick={() => setDisplayCity(item.itemName)} className="option-item">
+                      <div className="option-item-name">{item.itemName}</div>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </div >
+        <div className="option-container">
+          <div className="option-label">
+            <p>Mức giá</p>
+            <span className="material-icons">
+              expand_more
+            </span>
+          </div>
+          <div className="option-section">{displayPrice}</div>
+          <div className="option-list-container">
+            <ul className="option-list">
+              {
+                priceItems.map((item, index) => {
+                  return (
+                    <li key={index} onClick={() => setDisplayPrice(item.itemName)} className="option-item">
+                      <div className="option-item-name">{item.itemName}</div>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </div >
+        <div className="option-container">
+          <div className="option-label">
+            <p>Diện tích</p>
+            <span className="material-icons">
+              expand_more
+            </span>
+          </div>
+          <div className="option-section">{displaySquare}</div>
+          <div className="option-list-container">
+            <ul className="option-list">
+              {
+                squareItems.map((item, index) => {
+                  return (
+                    <li key={index} onClick={() => setDisplaySquare(item.itemName)} className="option-item">
+                      <div className="option-item-name">{item.itemName}</div>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </div >
+        <div className="option-container">
+          <div className="option-label">
+            <p>Dự án</p>
+            <span className="material-icons">
+              expand_more
+            </span>
+          </div>
+          <div className="option-section">{displayProject}</div>
+          <div className="option-list-container">
+            <ul className="option-list">
+              {
+                projectItems.map((item, index) => {
+                  return (
+                    <li key={index} onClick={() => setDisplayProject(item.itemName)} className="option-item">
+                      <div className="option-item-name">{item.itemName}</div>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </div >
+        <div className="option-container">
+          <div className="option-label">
+            <p>Phường/Xã</p>
+            <span className="material-icons">
+              expand_more
+            </span>
+          </div>
+          <div className="option-section">{displayWard}</div>
+          <div className="option-list-container">
+            <ul className="option-list">
+              {
+                wardItems.map((item, index) => {
+                  return (
+                    <li key={index} onClick={() => setDisplayWard(item.itemName)} className="option-item">
+                      <div className="option-item-name">{item.itemName}</div>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </div >
+        <div className="option-container">
+          <div className="option-label">
+            <p>Đường phố</p>
+            <span className="material-icons">
+              expand_more
+            </span>
+          </div>
+          <div className="option-section">{displayStreet}</div>
+          <div className="option-list-container">
+            <ul className="option-list">
+              {
+                streetItems.map((item, index) => {
+                  return (
+                    <li key={index} onClick={() => setDisplayStreet(item.itemName)} className="option-item">
+                      <div className="option-item-name">{item.itemName}</div>
+                    </li>
+                  );
+                })
+              }
+            </ul>
+          </div>
+        </div >
 
-        <button className="search-btn">
-          <span className="material-icons">search</span>
-          <p1>Tìm kiếm</p1>
-        </button>
-        <button className="reset-btn" onClick={handleClickReset}>
+
+        {isLoading ? loading : searchBtn}
+        <button className="reset-btn" onClick={handleReset}>
           <span className="material-icons reset-icon">delete</span>
           <div className="reset-tooltip-container">
             <div className="reset-tooltip-content">

@@ -22,9 +22,9 @@ const userRoutes = [
     {
         path: 'post', exact: false, main: () => <Post />
     },
-    {
-        path: "", exact: false, main: () => <NotFound />,
-    },
+    // {
+    //     path: "", exact: false, main: () => <NotFound />,
+    // },
 ]
 
 export default userRoutes;

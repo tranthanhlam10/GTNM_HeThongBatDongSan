@@ -90,6 +90,8 @@ iframe {
   white-space: nowrap !important;
   vertical-align: middle;
 }
+
+
 /*CSS cho thanh input*/
 .search-input {
   flex: 1;
@@ -111,6 +113,9 @@ iframe {
   color: #fff;
   background: #cfa267;
   cursor: pointer;
+  width: 146px;
+  height: 45px;
+
 }
 .button-search:hover {
   background: rgba(207,162,103,.8);
@@ -127,19 +132,7 @@ iframe {
   margin-top: 10px;
   color: white;
 }
-.home-searchbar-option {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  line-height: inherit;
-  height: 40px;
-  cursor: pointer;
-  border: 1px solid #dedede;
-  border-radius: 5px;
-  width: 20%;
-  padding: 0 5px;
-  margin-right: 10px;
-}
+
 
 
 
@@ -183,4 +176,62 @@ iframe {
 .realestate-type-btn{
   display:flex;
   cursor: pointer;
+  position: relative;
+}
+.re-style-dropdown{
+  position: absolute;
+  top: calc(100% + 10px);
+  width: 100%;
+
+  z-index: 9999;
+}
+.re-style-list{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: #fff;
+  color: #3f3424;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.re-style-item{
+  z-index: 9999;
+  padding-left: 15px;
+}
+.re-style-item:hover {
+  color: #cfa267;
+}
+
+
+.home-searchbar-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: inherit;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  width: 20%;
+  padding: 0 5px;
+  margin-right: 10px;
+  position: relative;
+}
+.option-search-dropdown{
+  position: absolute;
+  top: calc(100% + 10px);
+  width: calc(100% + 50px);
+  z-index: 9999;
+}
+.option-search-list{
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background-color: #fff;
+  color: #3f3424;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.option-search-item{
+  z-index: 9999;
+  padding-left: 15px;
+}
+.option-search-item:hover {
+  color: #cfa267;
 }

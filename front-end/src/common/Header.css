@@ -81,6 +81,15 @@
   height: 64px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+.header-line-hover {
+  height: 2px;
+  width: 0;
+  background: var(--main-color);
+  position: absolute;
+  top: 50px;
+  transition: all 0.4s ease-in-out;
 }
 .header-col > li:hover .navbar-hover-list {
   height: auto;
@@ -102,12 +111,6 @@
   color: #fff;
 } */
 
-.header-line-hover {
-  height: 2px;
-  width: 0;
-  background: var(--main-color);
-  transition: all 0.4s ease-in-out;
-}
 
 .header-navbar:hover .header-line-hover {
   width: 100%;
@@ -192,4 +195,22 @@
 
 .heart-icon:hover + .header-tooltip-container {
   display: block;
+}
+
+.header-heart-icon-container{
+  position: relative;
+}
+.num-of-wishlist{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 10px;
+  color: #fff;
+  top: -5px;
+  right: 8px;
 }

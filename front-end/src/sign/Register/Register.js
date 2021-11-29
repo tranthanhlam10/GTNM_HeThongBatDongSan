@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Register.css'
 import { Link, Redirect, useHistory } from 'react-router-dom'
-import loading1 from '../../assets/loading1.gif'
+import ReactLoading from "react-loading";
 export default function Register() {
     const history = useHistory();
 
@@ -21,6 +21,8 @@ export default function Register() {
 
     const [isValid, setIsValid] = useState(false)
 
+    const [border, setBorder] = useState('1px solid #ccc')
+    let regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     function AlertDialog(text) {
         alert(`${text}`);
     }
@@ -51,7 +53,12 @@ export default function Register() {
                         AlertDialog('Email không được để trống')
                     }
                     else {
-                        setIsValidEmail(true)
+                        if (!regEmail.test(email)) {
+                            AlertDialog('Email không hợp lệ')
+                        }
+                        else {
+                            setIsValidEmail(true)
+                        }
                         if (!password) {
                             setIsValidPassword(false)
                             AlertDialog('Mật khẩu không được để trống')
@@ -70,6 +77,14 @@ export default function Register() {
                                 }
                                 else {
                                     setIsValidCheckBox(true)
+                                    setIsValid(true)
+                                    if (password !== confirmPassword) {
+                                        AlertDialog('Xác nhận mật khẩu không khớp')
+                                        setBorder('1px solid red')
+                                    }
+                                    else {
+                                        setBorder('1px solid #ccc')
+                                    }
                                 }
                             }
                         }
@@ -78,7 +93,15 @@ export default function Register() {
             }
         }
     }
-    const loadingIcon = `<img src=${loading1} />`;
+
+    const registerBtn = <button className="register-button"
+        onClick={validate}>
+        Register
+    </button>
+    const loadingBtn = <button className="register-button">
+        <ReactLoading type="bubbles" color="#fff" />
+    </button>
+
     return (
         <div className="register-container">
             <div className="register-center">
@@ -92,6 +115,7 @@ export default function Register() {
 
                                 Aenean porta dolor ut nisi consequat aliquet. Integer varius condimentum lacus</span>
                         </div>
+
                     </div>
                 </div>
                 <div className="register-col2">
@@ -152,6 +176,7 @@ export default function Register() {
                                 <div className="confirm-pw-input">
                                     <label for="confirm-pw">Confirm Password</label>
                                     <input
+                                        style={{ border: border }}
                                         type="password"
                                         id="confirmPassword"
                                         name="confirmPassword"
@@ -167,17 +192,17 @@ export default function Register() {
                                     type="checkBox"
                                     name="checkBox"
                                     value={checkBox}
-                                    onChange={event => setCheckBox(event.target.value)}
+                                    onChange={event => setCheckBox(event.target.checked)}
                                 />
                                 I agree to the <span> Terms and Conditions</span>
                                 {!isValidCheckBox}
                             </label>
                         </form>
-                        <button className="register-button"
-                            onClick={validate}>
-                            {/* {isValid ? loadingIcon : 'Login'} */}
-                            Register
-                        </button>
+                        {isValid ? loadingBtn : registerBtn}
+                    </div>
+
+                    <div className="have-account">
+                        Have already an account ? <Link to="/login">Login here</Link>
                     </div>
                 </div>
             </div>

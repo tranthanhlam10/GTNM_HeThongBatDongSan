@@ -99,6 +99,11 @@ label,input{
     font-size: 18px;
     cursor: pointer;
     margin-top: 30px;
+    width: 168px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .register-button:hover {
     background: rgba(45,136,225,0.9)
@@ -109,4 +114,15 @@ label,input{
     width: 100%;
     padding: 15px 10px;
     outline: none;
+}
+
+
+.have-account{
+    margin-top: 50px;
+    text-align: center;
+}
+.have-account > a{
+    color: #2d88ff !important;
+    font-weight: 600;
+    border-bottom: 1px solid #2d88ff;
 }
