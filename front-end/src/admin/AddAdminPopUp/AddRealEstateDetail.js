@@ -90,18 +90,19 @@ export default function AddRealEstateDeatailDetail() {
         ></input>
       </div>
 
-      {/* <div>
-        <h3 className="popup-re-floor"> Cấp tài khoản:</h3>
-        <select className="popup-us-input-role">
-          <option value="user">User</option>
-          <option value="admin">Admin</option>
-          <option value="manager">Manager</option>
-        </select>
-      </div> */}
-
       <div className="add-reload-button">
-        <button className="add-pj-btn"> Thêm</button>
-        <button className="reload-pj-btn"> Nhập lại</button>
+        <button className="add-re-btn">
+          <a>
+            <span class="material-icons">add_circle</span>
+            <span>Thêm </span>
+          </a>
+        </button>
+        <button className="reload-re-btn">
+          <a>
+            <span class="material-icons">restart_alt</span>
+            <span> Nhập lại </span>
+          </a>
+        </button>
       </div>
     </>
   );

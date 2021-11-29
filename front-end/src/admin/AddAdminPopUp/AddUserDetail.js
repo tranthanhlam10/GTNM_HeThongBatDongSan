@@ -51,8 +51,19 @@ export default function AddUserDetail() {
       </div>
 
       <div className="add-reload-button">
-        <button className="add-pj-btn"> Thêm</button>
-        <button className="reload-pj-btn"> Nhập lại</button>
+        <button className="add-us-btn">
+          {" "}
+          <a>
+            <span class="material-icons">add_circle</span>
+            <span>Thêm </span>
+          </a>
+        </button>
+        <button className="reload-us-btn">
+          <a>
+            <span class="material-icons">restart_alt</span>
+            <span> Nhập lại </span>
+          </a>
+        </button>
       </div>
     </>
   );

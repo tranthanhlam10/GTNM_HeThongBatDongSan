@@ -70,24 +70,34 @@
   box-sizing: border-box;
 }
 
-.add-pj-btn,
-.reload-pj-btn {
+.add-us-btn,
+.reload-us-btn {
   border: none;
   padding: 1rem 2rem 1rem 2rem;
 }
+.add-us-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reload-us-btn > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.add-pj-btn {
+.add-us-btn {
   background-color: rgba(255, 255, 0, 0.575);
   margin-right: 0.5rem;
 }
-.add-pj-btn:hover {
+.add-us-btn:hover {
   background-color: rgba(255, 255, 0, 0.575);
   cursor: pointer;
 }
-.reload-pj-btn {
+.reload-us-btn {
   background-color: rgba(17, 231, 17, 0.479);
 }
-.reload-pj-btn:hover {
+.reload-us-btn:hover {
   background-color: rgba(17, 231, 17, 0.479);
   cursor: pointer;
 }

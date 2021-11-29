@@ -10,6 +10,7 @@ const Wishcardlist = [
     price: "14 TRIỆU/THÁNG",
     area: "70",
     location: "QUẬN NAM TỪ LIÊM, HÀ NỘI",
+    link: "/realestate",
   },
   {
     img: "https://cdn.houseviet.vn/images/post/02022021/132567282206070776-380x190.jpg",
@@ -18,6 +19,7 @@ const Wishcardlist = [
     price: "14 TRIỆU/THÁNG",
     area: "70",
     location: "QUẬN NAM TỪ LIÊM, HÀ NỘI",
+    link: "/realestate",
   },
 ];
 
@@ -50,6 +52,7 @@ export default function Wishlist() {
                     time={reCard.time}
                     area={reCard.area}
                     img={reCard.img}
+                    link={reCard.link}
                   />
                 </div>
               );

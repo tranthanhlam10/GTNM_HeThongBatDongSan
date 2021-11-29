@@ -1,10 +1,171 @@
-import React from 'react'
-import './ManagerStatistic.css'
+import React from "react";
+import { Bar } from "react-chartjs-2";
+// import faker from "faker";
+import "./ManagerStatistic.css";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+// export const options = {
+//   plugins: {
+//     title: {
+//       display: true,
+//       text: "Chart.js Bar Chart - Stacked",
+//     },
+//   },
+
+//   interaction: {
+//     mode: "index",
+//     intersect: false,
+//   },
+//   scales: {
+//     x: {
+//       stacked: true,
+//     },
+//     y: {
+//       stacked: true,
+//     },
+//   },
+// };
+
+// const labels = ["January", "February", "March", "April", "May", "June", "July"];
+
+// export const data = {
+//   labels,
+//   datasets: [
+//     {
+//       label: "Dataset 1",
+//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+//       backgroundColor: "rgb(255, 99, 132)",
+//       stack: "Stack 0",
+//     },
+//     {
+//       label: "Dataset 2",
+//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+//       backgroundColor: "rgb(75, 192, 192)",
+//       stack: "Stack 0",
+//     },
+//     {
+//       label: "Dataset 3",
+//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
+//       backgroundColor: "rgb(53, 162, 235)",
+//       stack: "Stack 1",
+//     },
+//   ],
+// };
 
 export default function ManagerStatistic() {
-    return (
-        <div>
-            Day la trang ManagerStatistic
+  return (
+    <div className="admin-ana-content">
+      <div className="admin-ana-info">
+        <div className="admin-ana-info-re ">
+          <div className="ana-info-re-body">
+            <div className="ana-info-re-content">
+              <span className="ana-info-re-header">Nhà đất</span>
+              <span>25 </span>
+            </div>
+            <img
+              scr="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
+              width="100px"
+              height="100px"
+            ></img>
+          </div>
+          <button className="ana-info-re-btn">Xem chi tiết</button>
         </div>
-    )
+        <div className="admin-ana-info-pj ">
+          <div className="ana-info-pj-body">
+            <div className="ana-info-pj-content">
+              <span className="ana-info-pj-header">Dự án</span>
+              <span>25 </span>
+            </div>
+            <img
+              scr="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
+              width="100px"
+              height="100px"
+            ></img>
+          </div>
+          <button className="ana-info-pj-btn">Xem chi tiết</button>
+        </div>
+        <div className="admin-ana-info-us ">
+          <div className="ana-info-us-body">
+            <div className="ana-info-us-content">
+              <span className="ana-info-us-header">Tài khoản</span>
+              <span>25 </span>
+            </div>
+            <img
+              scr="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
+              width="100px"
+              height="100px"
+            ></img>
+          </div>
+          <button className="ana-info-us-btn">Xem chi tiết</button>
+        </div>
+      </div>
+      <div className="admin-ana-chart-table">
+        <div className="admin-ana-table">
+          <div className="ana-table-header">Xem nhiều nhất</div>
+          <table className="ana-table-content">
+            <tr>
+              <th>Vinhomes</th>
+            </tr>
+            <tr>
+              {" "}
+              <th>Sala</th>
+            </tr>
+            <tr>
+              {" "}
+              <th>NovaLand</th>
+            </tr>
+            <tr>
+              {" "}
+              <th>DHQG</th>
+            </tr>
+          </table>
+        </div>
+        <div className="admin-ana-chart">
+          <Bar
+            className="chart"
+            data={{
+              labels: ["Vinhomes", "Sala", "NovaLand", "DHQG"],
+              datasets: [
+                {
+                  label: "Cost",
+                  backgroundColor: [
+                    "#3e95cd",
+                    "#8e5ea2",
+                    "#3cba9f",
+                    "#e8c3b9",
+                    "#c45850",
+                  ],
+                  data: [2478, 5267, 734, 784, 433],
+                },
+              ],
+            }}
+            options={{
+              legend: { display: false },
+              title: {
+                display: true,
+                text: "Predicted world population (millions) in 2050",
+              },
+            }}
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
