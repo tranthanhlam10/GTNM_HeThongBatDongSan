@@ -9,7 +9,7 @@ export default function ProjectDetail() {
       <div className="admin-pd-content-detail">
         <div className="admin-pd-detail">
           <div className="admin-pd-information">
-            <p classNames="infor">Tên dự án: Vinhomes</p>
+            <p className="infor">Tên dự án: Vinhomes</p>
             <p className="infor">Chủ đầu tư: Đạt</p>
             <p className="infor">Địa chỉ: Sài Gòn</p>
           </div>

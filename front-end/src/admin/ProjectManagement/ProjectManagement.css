@@ -1,6 +1,9 @@
 .admin-pm-content {
   flex: 1;
   margin: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 1rem;
 }
 
 .admin-pm-heading {
@@ -48,7 +51,7 @@
 
 .pm-search-input {
   display: flex;
-  margin-right: -4rem;
+  margin-right: -2rem;
   border: none;
   background-color: rgba(216, 216, 216, 0.404);
   padding: 1rem 2rem 1rem 2rem;
