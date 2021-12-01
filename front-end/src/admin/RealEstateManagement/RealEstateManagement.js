@@ -45,10 +45,19 @@ export default function RealEstateManagement() {
             <th>Chức năng</th>
           </tr>
           <tr>
-            <td>1</td>
-            <td>Vinhomes</td>
-            <td>15 tỷ</td>
-            <td>Sài Gòn</td>
+            <td>
+              {" "}
+              <a href="/admin/realestatedetail">1</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Vinhomes</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">15 Tỷ</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Sài Gòn</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -66,10 +75,19 @@ export default function RealEstateManagement() {
             </td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Salah</td>
-            <td>29 Tỷ</td>
-            <td>Sài Gòn</td>
+            <td>
+              {" "}
+              <a href="/admin/realestatedetail">2</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Sala</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">29 Tỷ</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Sài Gòn</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -87,10 +105,19 @@ export default function RealEstateManagement() {
             </td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>KTX ĐHQG</td>
-            <td>35 Tỷ</td>
-            <td>Bình Dương</td>
+            <td>
+              {" "}
+              <a href="/admin/realestatedetail">3</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">KTX DHQG</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">35 Tỷ</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Bình Dương</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -108,10 +135,19 @@ export default function RealEstateManagement() {
             </td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>Suối Tiên</td>
-            <td>20 tỷ</td>
-            <td>Đồng Nai</td>
+            <td>
+              {" "}
+              <a href="/admin/realestatedetail">5</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Suối tiên</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">20 Tỷ</a>
+            </td>
+            <td>
+              <a href="/admin/realestatedetail">Đồng Nai</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>

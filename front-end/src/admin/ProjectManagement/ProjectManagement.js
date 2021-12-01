@@ -41,9 +41,15 @@ export default function ProjectManagement() {
             <th>Chức năng</th>
           </tr>
           <tr>
-            <td>1</td>
-            <td>Vinhomes</td>
-            <td>Đạt</td>
+            <td>
+              <a href="/admin/projectdetail">1</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">Vinhomes</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">Đạt</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -61,9 +67,15 @@ export default function ProjectManagement() {
             </td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Salah</td>
-            <td>Lâm</td>
+            <td>
+              <a href="/admin/projectdetail">2</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">Sala</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">Lâm</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -81,9 +93,15 @@ export default function ProjectManagement() {
             </td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>KTX ĐHQG</td>
-            <td>Ngân</td>
+            <td>
+              <a href="/admin/projectdetail">3</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">DHQG</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">Ngân</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -101,9 +119,15 @@ export default function ProjectManagement() {
             </td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>Valorant</td>
-            <td>Bảo</td>
+            <td>
+              <a href="/admin/projectdetail">4</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">NovaLand</a>
+            </td>
+            <td>
+              <a href="/admin/projectdetail">Bảo</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
