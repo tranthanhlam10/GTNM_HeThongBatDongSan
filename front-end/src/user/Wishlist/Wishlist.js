@@ -1,5 +1,5 @@
 import React from "react";
-import "./Wishlist.css";
+import "./WishList.css";
 import SearchBar from "../../common/SearchBar/SearchBar";
 import WishCard from "./WishCard";
 import WishSort from "./WishSort";
