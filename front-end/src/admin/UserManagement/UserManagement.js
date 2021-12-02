@@ -7,7 +7,15 @@ export default function UserManagement() {
   const [buttonPopup, setButtonPopup] = useState(false);
   return (
     <div className="admin-usm-content">
-      <h2 className="admin-usm-heading">ADMIN DASHBOARD</h2>
+      <div className="admin-usm-heading">
+        <h2>ADMIN DASHBOARD</h2>
+        <button className="admin-usm-signout">
+          <a href="/">
+            <span className="btn-signout">Đăng xuất</span>
+            <span class="material-icons">logout</span>
+          </a>
+        </button>
+      </div>
       <div className="admin-usm-table">
         <div className="admin-usm-table-content">
           <div></div>
@@ -45,10 +53,20 @@ export default function UserManagement() {
             <th>Chức năng</th>
           </tr>
           <tr>
-            <td>1</td>
-            <td>Nguyễn Thành Đạt</td>
-            <td>ntdat@gmail.com</td>
-            <td> 123</td>
+            <td>
+              <a href="/admin/userdetail">1</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">Nguyễn Thành Đạt</a>
+            </td>
+            <td>
+              <a href="/admin/userdetail">ntdat@gamil.com</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">123</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -66,10 +84,20 @@ export default function UserManagement() {
             </td>
           </tr>
           <tr>
-            <td>2</td>
-            <td>Trần Thanh Lâm</td>
-            <td>ttlam@gmail.com</td>
-            <td> 123</td>
+            <td>
+              <a href="/admin/userdetail">2</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">Trần Thanh Lâm</a>
+            </td>
+            <td>
+              <a href="/admin/userdetail">ttlam@gamil.com</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">456</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -87,10 +115,20 @@ export default function UserManagement() {
             </td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>Nguyễn Thị Quỳnh Ngân</td>
-            <td>ntqn@gamil.com</td>
-            <td> 123</td>
+            <td>
+              <a href="/admin/userdetail">3</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">Nguyễn Thị Quỳnh Ngân</a>
+            </td>
+            <td>
+              <a href="/admin/userdetail">ntqngan@gamil.com</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">8910</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>
@@ -108,10 +146,20 @@ export default function UserManagement() {
             </td>
           </tr>
           <tr>
-            <td>4</td>
-            <td>Lương Duy Bảo</td>
-            <td>ldbao@gamil.com</td>
-            <td> 123</td>
+            <td>
+              <a href="/admin/userdetail">4</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">Lương Duy Bảo</a>
+            </td>
+            <td>
+              <a href="/admin/userdetail">ldbao@gamil.com</a>
+            </td>
+            <td>
+              {" "}
+              <a href="/admin/userdetail">111213</a>
+            </td>
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a>

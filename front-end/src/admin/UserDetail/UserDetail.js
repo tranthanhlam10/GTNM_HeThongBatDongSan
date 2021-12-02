@@ -15,6 +15,8 @@ export default function UserDetail() {
             src="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
             alt=""
             className="imformation__photo"
+            height="300px"
+            width="300px"
           ></img>
         </div>
 

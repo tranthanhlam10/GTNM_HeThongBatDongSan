@@ -1,7 +1,9 @@
 import React from "react";
 import { Bar } from "react-chartjs-2";
-// import faker from "faker";
 import "./ManagerStatistic.css";
+import anh10 from "../../assets/user-icon.png";
+import anh11 from "../../assets/projecticon.png";
+import anh12 from "../../assets/re-icon.png";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -72,15 +74,18 @@ ChartJS.register(
 export default function ManagerStatistic() {
   return (
     <div className="admin-ana-content">
+      <h2 className="admin-rem-heading">ADMIN DASHBOARD</h2>
+      <h1 className="ana-table-title">Thống kê</h1>
       <div className="admin-ana-info">
         <div className="admin-ana-info-re ">
           <div className="ana-info-re-body">
             <div className="ana-info-re-content">
               <span className="ana-info-re-header">Nhà đất</span>
-              <span>25 </span>
+              <span>100 </span>
             </div>
             <img
-              scr="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
+              className="ana-img"
+              src={anh12}
               width="100px"
               height="100px"
             ></img>
@@ -93,11 +98,7 @@ export default function ManagerStatistic() {
               <span className="ana-info-pj-header">Dự án</span>
               <span>25 </span>
             </div>
-            <img
-              scr="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
-              width="100px"
-              height="100px"
-            ></img>
+            <img src={anh11} width="100px" height="100px"></img>
           </div>
           <button className="ana-info-pj-btn">Xem chi tiết</button>
         </div>
@@ -105,35 +106,34 @@ export default function ManagerStatistic() {
           <div className="ana-info-us-body">
             <div className="ana-info-us-content">
               <span className="ana-info-us-header">Tài khoản</span>
-              <span>25 </span>
+              <span>4 </span>
             </div>
-            <img
-              scr="https://thuthuatnhanh.com/wp-content/uploads/2018/07/anh-dai-dien-dep.jpg"
-              width="100px"
-              height="100px"
-            ></img>
+            <img src={anh10} width="100px" height="100px"></img>
           </div>
           <button className="ana-info-us-btn">Xem chi tiết</button>
         </div>
       </div>
       <div className="admin-ana-chart-table">
         <div className="admin-ana-table">
-          <div className="ana-table-header">Xem nhiều nhất</div>
+          {/* <div className="ana-table-header">Xem nhiều nhất</div> */}
           <table className="ana-table-content">
             <tr>
-              <th>Vinhomes</th>
+              <th>Xem nhiều nhất</th>
+            </tr>
+            <tr>
+              <td>Vinhomes</td>
             </tr>
             <tr>
               {" "}
-              <th>Sala</th>
+              <td>Sala</td>
             </tr>
             <tr>
               {" "}
-              <th>NovaLand</th>
+              <td>NovaLand</td>
             </tr>
             <tr>
               {" "}
-              <th>DHQG</th>
+              <td>DHQG</td>
             </tr>
           </table>
         </div>
@@ -156,6 +156,8 @@ export default function ManagerStatistic() {
                 },
               ],
             }}
+            height={300}
+            width={800}
             options={{
               legend: { display: false },
               title: {
