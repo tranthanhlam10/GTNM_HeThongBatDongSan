@@ -43,7 +43,7 @@ export default function HomeSearchBar() {
   </button>
 
   const loading = <button className="button-search">
-    <ReactLoading type="bars" />
+    <ReactLoading type="bubbles" />
   </button>
 
   const sellStyle = {
