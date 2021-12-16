@@ -3,3 +3,11 @@
   height: 100%;
   background: #dedede;
 }
+
+.lb-realestate,.lb-project,.lb-account,.lb-analytics{
+  margin-bottom: 10px;
+}
+
+input{
+  outline: none;
+}
