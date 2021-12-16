@@ -64,14 +64,19 @@ export default function RealEstateInfo() {
                         </li>
                         <li className="share-or-save share-icon">
                             <button>
-                                <img src={share} className="re-detail-icon" />
+                                <span class="material-icons re-detail-icon">
+                                    share
+                                </span>
                                 <p>Chia sẻ</p>
                             </button>
 
                         </li>
                         <li className="share-or-save save-icon">
                             <button>
-                                <img src={heart} className="re-detail-icon" />
+                                <span class="material-icons re-detail-icon">
+                                    favorite_border
+                                </span>
+
                                 <p>Yêu thích</p>
                             </button>
                         </li>
@@ -107,7 +112,10 @@ export default function RealEstateInfo() {
                         </li>
                         <li className="share-or-save save-icon">
                             <button>
-                                <img src={heart} className="re-detail-icon" />
+                                <span class="material-icons re-detail-icon">
+                                    favorite_border
+                                </span>
+
                                 <p>Yêu thích</p>
                             </button>
                         </li>
