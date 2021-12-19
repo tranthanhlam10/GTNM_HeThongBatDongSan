@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './RealEstateInfo.css'
 import { AddCart, DeleteCart } from "../../actions";
 import { connect } from "react-redux";
+
 function RealEstateInfo(props) {
     const text = "Mô tả chung cư Watermark, quận Cầu Giấy, nằm ngay trên mặt đường Lạc Long Quân, bên cạnh quần thể khu đô thị Tây Hồ. Cách trung tâm Hà Nội khoảng 7 km, tiếp giáp với khu đô thị Ciputra và khu đô thị mới Tây Hồ Tây. Đây là tòa căn hộ duy nhất đang được bán quanh khu vực Tây Hồ Tây. Watermark sở hữu không gian sống trong lành, thoáng mát, view đẹp bên cạnh hồ. Với những lợi thế vốn có về địa lý khu đất Watermark còn đảm bảo đầy đủ về mặt tiện ích và dịch vụ như: Việc thông xe cầu Nhật Tân giúp cho giao thông thuận tiện. Với nhiều tiện ích cao cấp tại khu vực xung quanh như: Khu tập gym và hồ bơi dành riêng cho cư dân Watermark, khu nhà hàng sang trọng, cafe và siêu thị, ….. Trường học Quốc tế, khu vui chơi giải trí công viên nước Hồ Tây, thung lũng hoa Hồ Tây, …."
     const [isTruncated, setIsTruncated] = useState(true)
@@ -49,6 +50,11 @@ function RealEstateInfo(props) {
         e.preventDefault()
         setIsClickShare(prevState => !prevState)
     }
+    useEffect(() => {
+        if (props.numberCart !== 0) {
+            setIsClick(true)
+        }
+    }, [])
     return (
         <div className="re-info-container">
             <div className="re-info-box">
@@ -224,6 +230,7 @@ function RealEstateInfo(props) {
 const mapStateToProps = state => {
     return {
         _products: state._todoProduct,
+        numberCart: state._todoProduct.numberCart,
     };
 };
 function mapDispatchToProps(dispatch) {
