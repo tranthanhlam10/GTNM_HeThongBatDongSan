@@ -37,6 +37,7 @@
 .admin-red-detail-name {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-red-detail-name > p {
   padding-right: 20px;
@@ -58,6 +59,7 @@
 .admin-red-detail-owner {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-red-detail-owner > p {
   padding-right: 20px;
@@ -80,6 +82,7 @@
 .admin-red-detail-address {
   display: flex;
   margin-bottom: 20px;
+  align-items: center;
 }
 .admin-red-detail-address > p {
   padding-right: 20px;
@@ -99,6 +102,7 @@
 
 .admin-red-detail-status {
   display: flex;
+  align-items: center;
   margin-bottom: 20px;
 }
 .admin-red-detail-status > p {

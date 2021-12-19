@@ -22,7 +22,7 @@ export default function UserManagement() {
             </a>
           </button>
         </div>
-        <div className="usm-search-bar">
+        {/* <div className="usm-search-bar">
           <input
             type="search"
             placeholder="Tìm tài khoản"
@@ -35,7 +35,7 @@ export default function UserManagement() {
             {" "}
             <AddUserDetail />
           </PopUpAdd>
-        </div>
+        </div> */}
         <table className="usm-table-re-detail">
           <tr>
             <th>id</th>

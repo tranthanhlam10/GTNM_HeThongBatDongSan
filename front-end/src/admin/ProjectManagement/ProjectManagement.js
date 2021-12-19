@@ -23,7 +23,7 @@ export default function ProjectManagement() {
             <AddProjectDetail />
           </PopUpAdd>
         </div>
-        <div className="pm-search-bar">
+        {/* <div className="pm-search-bar">
           <input
             type="search"
             placeholder="Tìm dự án"
@@ -32,7 +32,7 @@ export default function ProjectManagement() {
           <button className="pm-search-button">
             <span className="material-icons">search</span>
           </button>
-        </div>
+        </div> */}
         <table className="pm-table-re-detail">
           <tr>
             <th>id</th>

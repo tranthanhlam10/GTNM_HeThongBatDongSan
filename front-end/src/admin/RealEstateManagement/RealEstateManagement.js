@@ -26,7 +26,7 @@ export default function RealEstateManagement() {
             <AddRealEstateDetail />
           </PopUpAdd>
         </div>
-        <div className="rem-search-bar">
+        {/* <div className="rem-search-bar">
           <input
             type="search"
             placeholder="Tìm nhà đất"
@@ -35,7 +35,7 @@ export default function RealEstateManagement() {
           <button className="rem-search-button">
             <span className="material-icons">search</span>
           </button>
-        </div>
+        </div> */}
         <table className="rem-table-re-detail">
           <tr>
             <th>id</th>
@@ -137,7 +137,7 @@ export default function RealEstateManagement() {
           <tr>
             <td>
               {" "}
-              <a href="/admin/realestatedetail">5</a>
+              <a href="/admin/realestatedetail">4</a>
             </td>
             <td>
               <a href="/admin/realestatedetail">Suối tiên</a>
