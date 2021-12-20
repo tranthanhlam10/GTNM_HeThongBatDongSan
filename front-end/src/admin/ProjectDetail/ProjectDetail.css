@@ -11,6 +11,7 @@
 }
 .admin-pd-header {
   margin-bottom: 1rem;
+  padding-top: 13px;
 }
 .admin-pd-content-detail {
   display: flex;
@@ -136,7 +137,7 @@
   cursor: pointer;
 }
 .btn--delete-pd {
-  background-color: rgba(255, 0, 0, 0.712);
+  background-color: rgba(255, 0, 0, 0.712); 
   border-radius: 10px;
 }
 .btn--delete-pd > a {

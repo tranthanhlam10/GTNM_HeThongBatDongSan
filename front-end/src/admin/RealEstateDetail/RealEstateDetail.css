@@ -11,6 +11,7 @@
 }
 .admin-red-header {
   margin-bottom: 1rem;
+  padding-top: 13px;
 }
 .admin-red-content-detail {
   display: flex;
@@ -172,7 +173,7 @@
 }
 .btn--refuse-red:hover {
 
-  background-color: rgb(216, 144, 11);
+  background-color: rgba(216, 144, 11,.8);
   cursor: pointer;
 }
 .btn--refuse-red > a {
