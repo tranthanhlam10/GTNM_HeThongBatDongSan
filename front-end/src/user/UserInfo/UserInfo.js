@@ -4,16 +4,14 @@ import "./UserInfo.css";
 import { Link, useHistory } from "react-router-dom";
 
 export default function UserInfo() {
-  const history = useHistory()
-  const [isLoading, setIsLoading] = useState(false)
+  const history = useHistory();
+  const [isLoading, setIsLoading] = useState(false);
   function AlertDialog(text) {
     alert(`${text}`);
   }
   const handleLoading = () => {
-
-    history.push('/login')
-
-  }
+    history.push("/login");
+  };
   return (
     <div className="user-info-container">
       <div className="user-info-description">
@@ -61,7 +59,12 @@ export default function UserInfo() {
             <p>Mật khẩu</p>
             <input placeholder="Sửa password" value="admin"></input>
           </div>
-          <button className="detail-btn-save" onClick={() => { AlertDialog("Lưu thay đổi thành công") }}>
+          <button
+            className="detail-btn-save"
+            onClick={() => {
+              AlertDialog("Lưu thay đổi thành công");
+            }}
+          >
             <a>
               <span class="material-icons">archive</span>
               <p>Lưu lại</p>
