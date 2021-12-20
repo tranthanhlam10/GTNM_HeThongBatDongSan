@@ -201,7 +201,7 @@ function Header(props) {
               <div className="num-of-wishlist">{props.numberCart}</div>
             )}
           </li>
-          <li>
+          <li style={{ "display": props.isLogin ? "block" : "none" }}>
             <Link to="/post" className="navbar-createFeed post-btn">
               <span className="material-icons">add</span>
               <p>Đăng tin</p>
