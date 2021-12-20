@@ -62,15 +62,17 @@ export default function UserManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/userdetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -93,15 +95,17 @@ export default function UserManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/userdetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -124,15 +128,17 @@ export default function UserManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/userdetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -155,15 +161,17 @@ export default function UserManagement() {
             <td colspan="2" className="admin-btn-function">
               <button className="btn--view-rem">
                 <a href="/admin/userdetail">
-                  <span class="material-icons">pageview</span>
-                  <span>View</span>
+                  <span class="material-icons">
+                    search
+                  </span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>

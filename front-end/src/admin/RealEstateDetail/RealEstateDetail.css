@@ -141,9 +141,13 @@
   border: none;
   padding: 1rem 2rem 1rem 2rem;
   margin-left: 2rem;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
 }
 .btn--accept-red {
-  background-color: rgba(17, 231, 17, 0.479);
+
+  background-color: rgba(17, 231, 17, 0.685);
   border-radius: 10px;
 }
 .btn--accept-red > a {
@@ -153,15 +157,7 @@
 }
 
 .btn--accept-red:hover {
-  background-color: rgba(17, 231, 17, 0.685);
-  cursor: pointer;
-}
-.btn--delete-red {
-  background-color: rgba(255, 0, 0, 0.623);
-  border-radius: 10px;
-}
-.btn--delete-red:hover {
-  background-color: rgba(255, 0, 0, 0.712);
+  background-color: rgba(17, 231, 17, 0.479);
   cursor: pointer;
 }
 .btn--delete-red > a {
@@ -175,6 +171,7 @@
   border-radius: 10px;
 }
 .btn--refuse-red:hover {
+
   background-color: rgb(216, 144, 11);
   cursor: pointer;
 }

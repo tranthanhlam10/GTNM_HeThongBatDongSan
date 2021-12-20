@@ -56,14 +56,14 @@ export default function ProjectManagement() {
                   <span class="material-icons">
                     search
                   </span>
-                  <span>View</span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -82,14 +82,14 @@ export default function ProjectManagement() {
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
                   <span class="material-icons">search</span>
-                  <span>View</span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -108,14 +108,14 @@ export default function ProjectManagement() {
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
                   <span class="material-icons">search</span>
-                  <span>View</span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
@@ -134,14 +134,14 @@ export default function ProjectManagement() {
               <button className="btn--view-rem">
                 <a href="/admin/projectdetail">
                   <span class="material-icons">search</span>
-                  <span>View</span>
+                  <span>Xem</span>
                 </a>
               </button>
 
               <button className="btn--delete-rem" onClick={DeleteNofication}>
                 <a>
                   <span class="material-icons">delete</span>
-                  <span>Delete</span>
+                  <span>Xóa</span>
                 </a>
               </button>
             </td>
