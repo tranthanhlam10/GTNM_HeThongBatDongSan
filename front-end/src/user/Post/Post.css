@@ -130,6 +130,7 @@
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /*CSS cho phần ngày đăng tin*/
