@@ -304,9 +304,9 @@ function SearchingList(props) {
 
     const displayCards = cards
         .slice(pagesVisited, pagesVisited + cardsPerPage)
-        .map((card) => {
+        .map((card, index) => {
             return (
-                <div>
+                <div key={index}>
                     <Card image={card.image} name={card.name} time={card.time} price={card.price} area={card.area} location={card.location} link={card.link} />
                 </div>
             );
