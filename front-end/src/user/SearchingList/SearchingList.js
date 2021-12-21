@@ -86,7 +86,7 @@ const filterList = [
 ]
 const cardList = [
     {
-        image: 'https://lh3.googleusercontent.com/proxy/b8Gzjr2UYpT5n2WOlViSDlobzpR0wrYrSf0JmVFOmSr9DYwR5Ufgm4lcnHWQB3z-CsVD8MoJXt5aNZ4udQm05wpfXNY8Na_F3t8NVprd89XczudmRHT2aO_7Uren_luFHbn4erKeKhEgsOUDJhc0Li6GxIrw0tg',
+        image: 'https://pt123.cdn.static123.com/images/thumbs/900x600/fit/2020/03/21/a6_1584776036.jpg',
         name: 'Cho thuê phòng trọ đường Liên Phường, Quận 9',
         time: '20 ngày trước',
         price: '9 TRIỆU/THÁNG',
